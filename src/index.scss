@@ -1,0 +1,12 @@
+:root {
+  // Theme colours
+  --theme-1-100: rgb(237, 214, 86);
+  --theme-1-040: rgba(237, 214, 86, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--theme-1-040);
+}
