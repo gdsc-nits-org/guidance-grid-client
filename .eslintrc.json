@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "commonjs": true,
@@ -24,7 +25,13 @@
       "version": "detect"
     }
   },
-  "ignorePatterns": ["node_modules/"],
+  "ignorePatterns": [
+    "node_modules/",
+    "routes.jsx",
+    "dist/",
+    "src/main.jsx",
+    "src/**/index.jsx"
+  ],
   "rules": {
     "arrow-body-style": 0,
     "class-methods-use-this": 0,
@@ -73,12 +80,12 @@
     "check-file/filename-naming-convention": [
       2,
       {
-        "src/**/*.{jsx}": "PASCAL_CASE",
-        "src/**/*.{js}": "CAMEL_CASE"
+        "src/**/*.jsx": "PASCAL_CASE",
+        "src/**/*.js": "CAMEL_CASE"
       }
     ],
     "check-file/folder-naming-convention": [
-      "error",
+      2,
       {
         "src/**/": "PASCAL_CASE"
       }
