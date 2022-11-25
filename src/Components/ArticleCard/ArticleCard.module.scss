@@ -1,0 +1,52 @@
+.main {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  width: min(90%, 50rem);
+  margin: 2rem auto;
+
+  .heading {
+    font-size: 1.5rem;
+    font-weight: var(--heading-1-text-weight);
+    cursor: pointer;
+  }
+
+  .heading:hover {
+    color: var(--gdsc-color-blue);
+  }
+
+  .subheading {
+    font-weight: var(--paragraph-1-text-weight);
+    font-size: 0.8rem;
+    text-align: justify;
+
+    /* Donot exceed more than 5 lines of content in Articles Page */
+    --max-lines: 3;
+    --line-height: 1.4;
+    overflow: hidden;
+    line-height: var(--line-height);
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+  }
+
+  .metadata {
+    font-weight: var(--paragraph-2-text-weight);
+    font-size: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+    .bold {
+      font-weight: var(--heading-1-text-weight);
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .text {
+      white-space: nowrap;
+    }
+    .text::after {
+      content: " •";
+    }
+  }
+}
