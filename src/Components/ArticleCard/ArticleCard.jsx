@@ -1,9 +1,11 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import { Icon } from "@iconify-icon/react";
 import styles from "./ArticleCard.module.scss";
 import TagItem from "../TagItem/TagItem";
 
 const ArticleCard = ({ data }) => {
+  const [bookmarked, setBookmark] = useState(0);
   return (
     <div className={styles.main}>
       <div className={styles.metadata}>
@@ -11,9 +13,18 @@ const ArticleCard = ({ data }) => {
         in
         <span className={styles.bold}>{data?.domain}</span>
       </div>
-      <Link to={`/posts/${data?.id}`}>
-        <div className={styles.heading}>{data?.title}</div>
-      </Link>
+      <div className={styles.heading}>
+        <Link to={`/posts/${data?.id}`}>
+          <div className={styles.title}>{data?.title}</div>
+        </Link>
+        <Icon
+          icon={
+            bookmarked ? "material-symbols:bookmark" : "material-symbols:bookmark-outline"
+          }
+          height="30"
+          onClick={() => setBookmark(!bookmarked)}
+        />
+      </div>
       <div className={styles.subheading}>{data?.content}</div>
       <div className={styles.metadata}>
         <div className={styles.text}>{data?.date}</div>

@@ -5,12 +5,17 @@
   margin: 2rem auto;
 
   .heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
     font-size: 1.5rem;
     font-weight: var(--heading-1-text-weight);
     cursor: pointer;
   }
 
-  .heading:hover {
+  .title:hover {
     color: var(--gdsc-color-blue);
   }
 
