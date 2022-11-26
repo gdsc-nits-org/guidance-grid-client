@@ -1,6 +1,6 @@
 .main {
-  font-family: var(--primary-font-family);
-  color: var(--primary-text-color);
+  font-family: var(--gdsc-font-1);
+  color: var(--gdsc-grayish-1-100);
   width: min(90%, 50rem);
   margin: 2rem auto;
 
@@ -16,7 +16,7 @@
   }
 
   .title:hover {
-    color: var(--gdsc-color-blue);
+    color: var(--gdsc-blue-1-100);
   }
 
   .subheading {
