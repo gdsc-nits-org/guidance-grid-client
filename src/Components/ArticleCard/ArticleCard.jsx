@@ -5,7 +5,12 @@ import styles from "./ArticleCard.module.scss";
 import TagItem from "../TagItem/TagItem";
 
 const ArticleCard = ({ data }) => {
-  const [bookmarked, setBookmark] = useState(0);
+  const [bookmarked, setBookmark] = useState(data?.bookmarked);
+  const handleBookmark = () => {
+    /* Make requests to backend to update bookmark */
+    setBookmark(!bookmarked);
+  };
+
   return (
     <div className={styles.main}>
       <div className={styles.metadata}>
@@ -22,7 +27,7 @@ const ArticleCard = ({ data }) => {
             bookmarked ? "material-symbols:bookmark" : "material-symbols:bookmark-outline"
           }
           height="30"
-          onClick={() => setBookmark(!bookmarked)}
+          onClick={handleBookmark}
         />
       </div>
       <div className={styles.subheading}>{data?.content}</div>
