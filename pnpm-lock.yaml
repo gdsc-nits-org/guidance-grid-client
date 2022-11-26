@@ -24,6 +24,7 @@ specifiers:
   vite: ^3.2.3
 
 dependencies:
+  '@iconify-icon/react': 1.0.1_react@18.2.0
   '@vitejs/plugin-react': 2.2.0_vite@3.2.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -31,7 +32,6 @@ dependencies:
   vite: 3.2.4_sass@1.56.1
 
 devDependencies:
-  '@iconify-icon/react': 1.0.1_react@18.2.0
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
   eslint: 8.27.0
@@ -394,11 +394,11 @@ packages:
     dependencies:
       iconify-icon: 1.0.1
       react: 18.2.0
-    dev: true
+    dev: false
 
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
@@ -1673,7 +1673,7 @@ packages:
     resolution: {integrity: sha512-8qXahj8q0fJ1uMkVJ1DujJw35CWBFxUY9UFCzytfItNjcoj+Dz7yUakuXTzaByIc8seQCnw9CuLVzHdw7yEkBQ==}
     dependencies:
       '@iconify/types': 2.0.0
-    dev: true
+    dev: false
 
   /ignore/5.2.0:
     resolution: {integrity: sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==}
@@ -2300,6 +2300,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /readdirp/3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
