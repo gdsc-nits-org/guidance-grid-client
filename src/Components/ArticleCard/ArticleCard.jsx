@@ -8,12 +8,15 @@ const ArticleCard = ({ data }) => {
   const [bookmarked, setBookmark] = useState(data?.bookmarked);
   const handleBookmark = () => {
     /* Make requests to backend to update bookmark */
-    setBookmark(!bookmarked);
+    setBookmark((prevState) => !prevState);
   };
 
   return (
     <div className={styles.main}>
       <div className={styles.metadata}>
+        <Link to={data?.authorprofile}>
+          <img height="15" src={data?.authorprofileimage} alt="Profile of author" />
+        </Link>
         <span className={styles.bold}>{data?.author}</span>
         in
         <span className={styles.bold}>{data?.domain}</span>

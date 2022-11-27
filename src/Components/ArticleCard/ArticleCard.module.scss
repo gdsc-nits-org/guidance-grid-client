@@ -1,18 +1,19 @@
 .main {
   font-family: var(--gdsc-font-1);
-  color: var(--gdsc-grayish-1-100);
+  color: var(--gdsc-grayish-2-100);
   width: min(90%, 50rem);
   margin: 2rem auto;
 
   .heading {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
   }
 
   .title {
     font-size: 1.5rem;
     font-weight: var(--heading-1-text-weight);
-    cursor: pointer;
   }
 
   .title:hover {
@@ -24,12 +25,14 @@
     font-size: 0.8rem;
     text-align: justify;
 
-    /* Donot exceed more than 5 lines of content in Articles Page */
+    /* Truncate more than 3 lines of content in Article card */
     --max-lines: 3;
     --line-height: 1.4;
+    display: -webkit-box;
     overflow: hidden;
     line-height: var(--line-height);
-    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
   }
 
   .metadata {

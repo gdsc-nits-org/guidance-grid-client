@@ -8,7 +8,11 @@ const Home = () => {
   useEffect(() => {
     fetch("/articles/getarticles.json")
       .then((res) => res.json())
-      .then((jres) => setmsg(jres?.msg));
+      .then((jres) => {
+        if (jres.status === 200) setmsg(jres?.msg);
+        else console.log(jres);
+      })
+      .catch((e) => console.log(e));
   }, []);
 
   return (
