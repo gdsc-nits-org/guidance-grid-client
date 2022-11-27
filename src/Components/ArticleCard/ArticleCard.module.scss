@@ -1,0 +1,66 @@
+.main {
+  font-family: var(--gdsc-font-1);
+  color: var(--gdsc-grayish-2-100);
+  width: min(90%, 50rem);
+  margin: 2rem auto;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: var(--heading-1-text-weight);
+  }
+
+  .title:hover {
+    color: var(--gdsc-blue-1-100);
+  }
+
+  .subheading {
+    font-weight: var(--paragraph-1-text-weight);
+    font-size: 0.8rem;
+    text-align: justify;
+
+    /* Truncate more than 3 lines of content in Article card */
+    --max-lines: 3;
+    --line-height: 1.4;
+    display: -webkit-box;
+    overflow: hidden;
+    line-height: var(--line-height);
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+  }
+
+  .metadata {
+    font-weight: var(--paragraph-2-text-weight);
+    font-size: 0.7rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.5rem 0;
+    .bold {
+      font-weight: var(--heading-1-text-weight);
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .text {
+      white-space: nowrap;
+    }
+    .text::after {
+      content: " •";
+    }
+    .author {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  }
+}
