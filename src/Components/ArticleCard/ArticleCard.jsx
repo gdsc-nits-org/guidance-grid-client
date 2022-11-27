@@ -14,10 +14,10 @@ const ArticleCard = ({ data }) => {
   return (
     <div className={styles.main}>
       <div className={styles.metadata}>
-        <Link to={data?.authorprofile}>
-          <img height="15" src={data?.authorprofileimage} alt="Profile of author" />
+        <Link className={styles.author} to={data?.author?.profile}>
+          <img height="15" src={data?.author?.image} alt="Profile of author" />
         </Link>
-        <span className={styles.bold}>{data?.author}</span>
+        <span className={styles.bold}>{data?.author?.name}</span>
         in
         <span className={styles.bold}>{data?.domain}</span>
       </div>
