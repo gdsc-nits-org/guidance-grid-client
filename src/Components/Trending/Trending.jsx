@@ -15,21 +15,21 @@ const Trending = () => {
           <div className="card">
             <p className="art_name">
               {" "}
-              01 <img src="./Images/profile.png" alt="" /> GDSC in Code.
+              01 <img src="/Images/profile.png" alt="" /> GDSC in Code.
             </p>
             <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
           </div>
           <div className="card">
             <p className="art_name">
               {" "}
-              02 <img src="./Images/profile.png" alt="" /> GDSC in Code.
+              02 <img src="/Images/profile.png" alt="" /> GDSC in Code.
             </p>{" "}
             <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
           </div>
           <div className="card">
             <p className="art_name">
               {" "}
-              03 <img src="./Images/profile.png" alt="" /> GDSC in Code.
+              03 <img src="/Images/profile.png" alt="" /> GDSC in Code.
             </p>{" "}
             <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
           </div>
@@ -38,21 +38,21 @@ const Trending = () => {
           <div className="card">
             <p className="art_name">
               {" "}
-              04 <img src="./Images/profile.png" alt="" /> GDSC in Code.
+              04 <img src="/Images/profile.png" alt="" /> GDSC in Code.
             </p>{" "}
             <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
           </div>
           <div className="card">
             <p className="art_name">
               {" "}
-              05 <img src="./Images/profile.png" alt="" /> GDSC in Code.
+              05 <img src="/Images/profile.png" alt="" /> GDSC in Code.
             </p>{" "}
             <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
           </div>
           <div className="card">
             <p className="art_name">
               {" "}
-              06 <img src="./Images/profile.png" alt="" /> GDSC in Code.
+              06 <img src="/Images/profile.png" alt="" /> GDSC in Code.
             </p>{" "}
             <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
           </div>
