@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+$gdsc-font-2: "Roboto", sans-serif;
+
 $grey-text-1-100: rgba(101, 108, 115, 1);
 $grey-text-1-70: rgba(101, 108, 115, 0.7);
 
@@ -14,7 +18,7 @@ $grey-text-1-70: rgba(101, 108, 115, 0.7);
   flex-direction: column;
   text-align: center;
   color: $grey-text-1-100;
-  font: $f;
+  font-family: $f;
 }
 
 @mixin line($c) {
@@ -42,15 +46,11 @@ a {
 }
 
 .footer_list_side {
-  @include footer_list_top(25%, var(--gdsc-font-2));
-  // @include footer_list_top(25%);
-  // font: var(--gdsc-font-2);
+  @include footer_list_top(25%, $gdsc-font-2);
 }
 
 .footer_list_middle {
   @include footer_list_top(50%, var(--gdsc-font-1));
-  // @include footer_list_top(50%);
-  // font: var(--gdsc-font-1);
 }
 
 .footer_list_header {
@@ -59,7 +59,7 @@ a {
 
 .footer_list_head {
   @include header(bolder);
-  font: var(--gdsc-font-2);
+  font: $gdsc-font-2;
 }
 
 .links {
