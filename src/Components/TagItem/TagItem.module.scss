@@ -1,0 +1,20 @@
+a {
+  text-decoration: none;
+  color: var(--gdsc-grayish-1-100);
+}
+
+.tagitem {
+  border-radius: 12px;
+  padding: 0 0.5rem;
+  background-color: #d9d9d9;
+  text-align: center;
+  height: fit-content;
+  font-size: 0.6rem;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tagitem:hover {
+  color: var(--gdsc-blue-1-100);
+}
