@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+// .............................................................
+
+$border-color: rgb(141, 141, 141, 0.2);
+
+* {
+  margin: 0;
+
+  font-family: poppins;
+}
+
+h4 {
+  width: 100%;
+  text-align: left;
+  padding: 2%;
+  font-family: poppins;
+}
+
+.mainBox {
+  float: right;
+  position: sticky;
+  top: 0;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  width: 35%;
+  height: 80vh;
+
+  text-align: center;
+}
+
+.box1 {
+  margin: 2rem auto 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: auto;
+  width: 70%;
+
+  span {
+    color: grey;
+    border: 1.5px solid $border-color;
+    border-radius: 2px;
+    width: auto;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    font-weight: 400;
+    padding: 1.7%;
+    margin: 1.5%;
+
+    height: fit-content;
+
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.test {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.box2 {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 70%;
+
+  p {
+    padding: 2%;
+    text-align: left;
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    margin-bottom: -10px;
+
+    &:last-of-type {
+      text-align: right;
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mainBox {
+    display: none;
+  }
+}
