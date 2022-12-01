@@ -1,40 +1,10 @@
-import { useState, useEffect } from "react";
+import { useFetchData } from "../../Hooks";
 import { Button, ArticleCard, Loading } from "../../Components";
 
 import style from "./Home.module.scss";
 
 const Home = () => {
-  const [respState, setRespState] = useState({
-    loading: true,
-    response: [],
-    error: false,
-  });
-
-  const fetchData = async () => {
-    try {
-      const res = await fetch("/articles/getarticles.json");
-      const jres = await res.json();
-      setRespState({
-        loading: false,
-        response: jres.status === 200 ? jres.msg : [],
-        error: jres.status !== 200 ? jres.msg : null,
-      });
-    } catch (e) {
-      setRespState((prevState) => {
-        return {
-          ...prevState,
-          loading: false,
-          error: e,
-        };
-      });
-    }
-  };
-
-  useEffect(() => {
-    // fetchData();
-    /* Set Timeout used to simulate loading. Will be removed */
-    setTimeout(fetchData, 1000);
-  }, []);
+  const [respState] = useFetchData("/articles/getarticles.json");
 
   return (
     <main className={style.home}>
@@ -43,7 +13,7 @@ const Home = () => {
       {respState.loading && <Loading />}
       {respState.error && <div>Error</div>}
       {respState.response.map((item, index) => {
-        return <ArticleCard data={item} id={index} />;
+        return <ArticleCard data={item} id={index} key={item?.id} />;
       })}
     </main>
   );
