@@ -41,7 +41,9 @@ const ArticleCard = ({ data }) => {
         <div className={styles.text}>10 mins read</div>
         <div className={styles.tags}>
           {data?.tags.map((item, index) => {
-            return <TagItem text={item} id={index} />;
+            return (
+              <TagItem text={item?.name} href={item?.url} id={index} key={item?.id} />
+            );
           })}
         </div>
       </div>
