@@ -17,7 +17,7 @@ const fetchData = async (setState, url) => {
       return {
         ...prevState,
         loading: false,
-        error: e,
+        error: e.message,
       };
     });
   }
