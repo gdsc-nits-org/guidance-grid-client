@@ -1,7 +1,6 @@
 import React from "react";
 import { Icon } from "@iconify-icon/react";
 import styles from "./Footer.module.scss";
-import logo from "../../public/images/logo.svg";
 
 const Footer = () => {
   return (
@@ -74,7 +73,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.logo_main}>
-          <img src={logo} className={styles.logo_img} alt="gdsc logo" />
+          <img src="/images/logo.svg" className={styles.logo_img} alt="gdsc logo" />
           <span className={styles.logo_text}>Google Developer Student Club NITS</span>
         </div>
       </div>
