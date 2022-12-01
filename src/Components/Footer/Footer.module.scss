@@ -1,24 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
-$gdsc-font-2: "Roboto", sans-serif;
-
 $grey-text-1-100: rgba(101, 108, 115, 1);
 $grey-text-1-70: rgba(101, 108, 115, 0.7);
 
 @mixin header($n) {
   padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
+  // padding-bottom: 0.5rem;
   font-weight: $n;
 }
 
-@mixin footer_list_top($w, $f) {
+@mixin footer_list_top($w) {
   padding: 2rem 5rem 2rem 5rem;
   width: $w;
   display: flex;
   flex-direction: column;
   text-align: center;
   color: $grey-text-1-100;
-  font-family: $f;
 }
 
 @mixin line($c) {
@@ -26,13 +21,13 @@ $grey-text-1-70: rgba(101, 108, 115, 0.7);
   height: 0.2rem;
   background: $c;
   align-self: center;
+  margin-bottom: 1rem;
 }
 
 .wrapper {
   background-color: #ffffff;
   position: absolute;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
-  height: 50vh;
   width: 100%;
   margin: auto;
   display: flex;
@@ -46,11 +41,11 @@ a {
 }
 
 .footer_list_side {
-  @include footer_list_top(25%, $gdsc-font-2);
+  @include footer_list_top(25%);
 }
 
 .footer_list_middle {
-  @include footer_list_top(50%, var(--gdsc-font-1));
+  @include footer_list_top(50%);
 }
 
 .footer_list_header {
@@ -59,16 +54,10 @@ a {
 
 .footer_list_head {
   @include header(bolder);
-  font: $gdsc-font-2;
-}
-
-.links {
-  font-size: 1rem;
 }
 
 .text {
   font-size: 1rem;
-  font: var(--gdsc-font-1);
 }
 
 a {
@@ -84,7 +73,8 @@ a {
 .socials {
   display: flex;
   justify-content: space-evenly;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .red {
@@ -93,4 +83,21 @@ a {
 
 .yellow {
   @include line(var(--gdsc-yellow-1-100));
+}
+
+.logo_main {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.logo_text {
+  color: $grey-text-1-100;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.logo_img {
+  width: 5rem;
+  padding-right: 1rem;
 }
