@@ -16,23 +16,25 @@ h4 {
   font-family: poppins;
 }
 
-.mainBox {
+.main {
   float: right;
   position: sticky;
   top: 0;
   background-color: white;
-
   display: flex;
   flex-direction: column;
   justify-content: left;
 
-  width: 35%;
+  width: 36%;
   height: 80vh;
 
   text-align: center;
-}
 
-.box1 {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.tagBox {
   margin: 2rem auto 2rem auto;
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +49,7 @@ h4 {
     width: auto;
     white-space: nowrap;
     font-size: 0.7rem;
-    font-weight: 400;
+    font-weight: 500;
     padding: 1.7%;
     margin: 1.5%;
 
@@ -55,17 +57,13 @@ h4 {
 
     &:hover {
       color: black;
+      border: 1.5px solid rgb(215, 215, 215);
       cursor: pointer;
     }
   }
 }
 
-.test {
-  height: 100vh;
-  background-color: rgb(0, 0, 0);
-}
-
-.box2 {
+.bookmarks {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -77,18 +75,16 @@ h4 {
     text-align: left;
     width: 100%;
     font-size: 0.7rem;
-    font-weight: lighter;
+    font-weight: 300;
     margin-bottom: -10px;
+    height: fit-content;
 
     &:last-of-type {
       text-align: right;
       width: 90%;
+      a {
+        color: var(--gdsc-blue-1-100);
+      }
     }
-  }
-}
-
-@media (max-width: 600px) {
-  .mainBox {
-    display: none;
   }
 }

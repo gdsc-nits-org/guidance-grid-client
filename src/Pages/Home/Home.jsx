@@ -18,6 +18,7 @@ const Home = () => {
             return <ArticleCard data={item} id={index} key={item?.id} />;
           })}
         </div>
+
         <SideBar />
       </div>
     </main>

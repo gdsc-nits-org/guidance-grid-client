@@ -21,21 +21,18 @@ const SideBar = () => {
   const tagspan = tags.map((tag) => <span>{tag}</span>);
 
   return (
-    <div className={styles.mainBox}>
-      <div className={styles.box1}>
+    <div className={styles.main}>
+      <div className={styles.tagBox}>
         <h4>Search by tags</h4>
         {tagspan}
       </div>
 
-      <div className={styles.box2}>
+      <div className={styles.bookmarks}>
         <h4>Bookmarks</h4>
-        <p>What is ReactJS and how can it be used int development</p>
-        <p>What is ReactJS and how canbe used innot development</p>
-        <p>
-          What is ReactJS and h lklngo;jhea ohgp q qr goiqhgr qihghoq g oqogiq gow can it
-          be usjnojnonononed int development
-        </p>
-        <p>What is ReactJS and how ca n it be used int development</p>
+        <p>What is ReactJS and how can it be used development</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+        <p>What is ReactJS and how can it be used development</p>
+        <p>13 reasons Why no one loves npm anymore</p>
         <p>
           <a href="/">Read more</a>
         </p>
