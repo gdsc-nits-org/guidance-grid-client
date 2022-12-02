@@ -10,9 +10,11 @@ $grey-text-1-70: rgba(101, 108, 115, 0.7);
 @mixin footer_list_top($w) {
   padding: 2rem 5rem 2rem 5rem;
   width: $w;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  display: grid;
+  place-items: center;
+  // flex-direction: column;
+  // text-align: center;
+  justify-content: center;
   color: $grey-text-1-100;
 }
 
@@ -29,10 +31,11 @@ $grey-text-1-70: rgba(101, 108, 115, 0.7);
   position: relative;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
   width: 100%;
-  margin: auto;
   display: flex;
   flex-flow: row wrap;
-  // flex-flow: column nowrap;
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+  }
   justify-content: center;
 }
 
@@ -42,10 +45,16 @@ a {
 
 .footer_list_side {
   @include footer_list_top(25%);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .footer_list_middle {
   @include footer_list_top(50%);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .footer_list_header {
@@ -58,6 +67,10 @@ a {
 
 .text {
   font-size: 1rem;
+  text-align: center;
+  @media (max-width: 375px) {
+    font-size: 0.7rem;
+  }
 }
 
 a {
@@ -71,8 +84,11 @@ a {
 }
 
 .socials {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 2rem;
+  // grid-row-start: auto;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
 }
@@ -88,16 +104,25 @@ a {
 .logo_main {
   display: flex;
   align-items: center;
-  padding-bottom: 2rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .logo_text {
   color: $grey-text-1-100;
   font-weight: 500;
   font-size: 1.7rem;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
 .logo_img {
   width: 5rem;
   padding-right: 1rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    padding-right: 0.7rem;
+  }
 }
