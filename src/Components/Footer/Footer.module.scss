@@ -54,6 +54,7 @@ a {
   @include footer_list_top(50%);
   @media (max-width: 768px) {
     width: 100%;
+    order: -1;
   }
 }
 
