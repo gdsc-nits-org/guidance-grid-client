@@ -1,6 +1,3 @@
-$grey-text-1-100: rgba(101, 108, 115, 1);
-$grey-text-1-70: rgba(101, 108, 115, 0.7);
-
 @mixin header($n) {
   padding-top: 1.5rem;
   // padding-bottom: 0.5rem;
@@ -15,7 +12,7 @@ $grey-text-1-70: rgba(101, 108, 115, 0.7);
   // flex-direction: column;
   // text-align: center;
   justify-content: center;
-  color: $grey-text-1-100;
+  color: var(--grey-text-1-100);
 }
 
 @mixin line($c) {
@@ -26,7 +23,12 @@ $grey-text-1-70: rgba(101, 108, 115, 0.7);
   margin-bottom: 1rem;
 }
 
+// .footer {
+//   margin: 5rem;
+// }
+
 .wrapper {
+  margin-top: 5rem;
   background-color: #ffffff;
   position: relative;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
@@ -75,12 +77,12 @@ a {
 }
 
 a {
-  color: $grey-text-1-100;
+  color: var(--grey-text-1-100);
   &:hover {
-    color: $grey-text-1-70;
+    color: var(--grey-text-1-70);
   }
   &:visited {
-    color: $grey-text-1-100;
+    color: var(--grey-text-1-100);
   }
 }
 
@@ -110,7 +112,7 @@ a {
 }
 
 .logo_text {
-  color: $grey-text-1-100;
+  color: var(--grey-text-1-100);
   font-weight: 500;
   font-size: 1.7rem;
   text-align: center;
