@@ -37,7 +37,9 @@ const SideBar = () => {
       <div className={styles.searchTags}>
         <h4>Search by tags</h4>
         {tags.slice(0, 15).map((tag) => (
-          <span>{tag}</span>
+          <span>
+            <a href="/">{tag}</a>
+          </span>
         ))}
       </div>
 
