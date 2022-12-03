@@ -14,9 +14,9 @@ const Home = () => {
         <div className={style.article}>
           {articleRespState.loading && <Loading />}
           {articleRespState.error && <div>Error</div>}
-          {articleRespState.response.map((item, index) => {
-            return <ArticleCard data={item} id={index} key={item?.id} />;
-          })}
+          {articleRespState.response.map((item, index) => (
+            <ArticleCard data={item} id={index} key={item?.id} />
+          ))}
         </div>
 
         <SideBar />

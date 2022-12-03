@@ -1,19 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
-// .............................................................
-
-$border-color: rgb(141, 141, 141, 0.2);
-
-* {
-  margin: 0;
-
-  font-family: poppins;
-}
-
 h4 {
-  width: 100%;
+  width: inherit;
   text-align: left;
-  padding: 2%;
-  font-family: poppins;
+  margin: 1rem 0.2rem;
 }
 
 .main {
@@ -24,40 +12,39 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: left;
-
-  width: 36%;
-  height: 80vh;
-
+  width: 36vw;
+  height: 100vh;
   text-align: center;
 
   @media (max-width: 600px) {
     display: none;
   }
 }
-.tagBox {
-  margin: 2rem auto 2rem auto;
+.searchTags {
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
   height: auto;
-  width: 70%;
+  width: 18rem;
 
   span {
-    color: grey;
-    border: 1.5px solid $border-color;
+    color: gray;
+    border: 1.5px solid var(--gdsc-bg-1-100);
     border-radius: 2px;
     width: auto;
     white-space: nowrap;
     font-size: 0.7rem;
     font-weight: 500;
-    padding: 1.7%;
-    margin: 1.5%;
-
+    padding: 0.2rem;
+    margin: 0.3rem;
     height: fit-content;
+
+    user-select: none;
 
     &:hover {
       color: black;
-      border: 1.5px solid rgb(215, 215, 215);
+      border: 1.5px solid var(--gdsc-line-1-100);
       cursor: pointer;
     }
   }
@@ -68,23 +55,25 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  width: 70%;
+  width: 18rem;
 
-  p {
-    padding: 2%;
+  a {
+    padding: 0.4rem;
     text-align: left;
-    width: 100%;
+    width: fit-content;
     font-size: 0.7rem;
     font-weight: 300;
-    margin-bottom: -10px;
     height: fit-content;
 
     &:last-of-type {
       text-align: right;
-      width: 90%;
-      a {
-        color: var(--gdsc-blue-1-100);
-      }
+      width: 17rem;
+      color: var(--gdsc-blue-1-100);
+    }
+
+    &:hover {
+      color: black;
+      font-weight: 400;
     }
   }
 }
