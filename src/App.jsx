@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Navbar } from "./Components";
+import { Navbar, Footer } from "./Components";
 
 import routes from "./routes";
 
@@ -11,6 +11,7 @@ const App = () => {
     <>
       <Navbar />
       <RouterProvider router={router} />
+      <Footer />
     </>
   );
 };
