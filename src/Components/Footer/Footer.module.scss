@@ -1,0 +1,126 @@
+@mixin header($n) {
+  padding-top: 1.5rem;
+  // padding-bottom: 0.5rem;
+  font-weight: $n;
+}
+
+@mixin footer_list_top($w) {
+  padding: 2rem 5rem 2rem 5rem;
+  width: $w;
+  display: grid;
+  place-items: center;
+  // flex-direction: column;
+  // text-align: center;
+  justify-content: center;
+  color: var(--grey-text-1-100);
+}
+
+@mixin line($c) {
+  width: 3rem;
+  height: 0.2rem;
+  background: $c;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.wrapper {
+  margin-top: 5rem;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+  }
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer_list_side {
+  @include footer_list_top(25%);
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.footer_list_middle {
+  @include footer_list_top(50%);
+  @media (max-width: 768px) {
+    width: 100%;
+    order: -1;
+  }
+}
+
+.footer_list_header {
+  @include header(500);
+}
+
+.footer_list_head {
+  @include header(bolder);
+}
+
+.text {
+  font-size: 1rem;
+  text-align: center;
+  @media (max-width: 375px) {
+    font-size: 0.7rem;
+  }
+}
+
+a {
+  color: var(--grey-text-1-100);
+  &:hover {
+    color: var(--grey-text-1-70);
+  }
+  &:visited {
+    color: var(--grey-text-1-100);
+  }
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.red {
+  @include line(var(--gdsc-red-1-100));
+}
+
+.yellow {
+  @include line(var(--gdsc-yellow-1-100));
+}
+
+.logo_main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo_text {
+  color: var(--grey-text-1-100);
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.logo_img {
+  width: 5rem;
+  padding-right: 1rem;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    padding-right: 0.7rem;
+  }
+}
