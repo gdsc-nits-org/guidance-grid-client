@@ -1,64 +1,28 @@
-import "./Trending.scss";
+import { Link } from "react-router-dom";
+import styles from "./Trending.module.scss";
 
-const Trending = () => {
+const Trending = ({ data = {} }) => {
   return (
-    <>
-      <div className="head">
-        <h1>GUIDANCE GRID</h1>
+    <div className={styles.card}>
+      <div className={styles.metadata}>
+        <div className={styles.rank}>0{data?.rank}</div>
+        <Link className={styles.author} to={data?.author?.profile}>
+          <img height="20" src={data?.author?.image} alt="Profile of author" />
+          <span className={styles.bold}>{data?.author?.name}</span>
+        </Link>
+        in
+        <Link className={styles.author} to={data?.domain?.url}>
+          <span className={styles.bold}>{data?.domain?.name}</span>
+        </Link>
       </div>
-      <div className="searchbar">
-        <input type="text" placeholder="Search blogs" />
+      <div className={styles.heading}>
+        <Link to={data?.url}>{data?.title}</Link>
       </div>
-      <secttion className="trending">
-        <h3>Trending Articles</h3>
-        <div className="trend-art1">
-          <div className="card">
-            <p className="art_name">
-              {" "}
-              01 <img src="/Images/profile.png" alt="" /> GDSC in Code.
-            </p>
-            <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
-          </div>
-          <div className="card">
-            <p className="art_name">
-              {" "}
-              02 <img src="/Images/profile.png" alt="" /> GDSC in Code.
-            </p>{" "}
-            <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
-          </div>
-          <div className="card">
-            <p className="art_name">
-              {" "}
-              03 <img src="/Images/profile.png" alt="" /> GDSC in Code.
-            </p>{" "}
-            <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
-          </div>
-        </div>
-        <div className="trend-art2">
-          <div className="card">
-            <p className="art_name">
-              {" "}
-              04 <img src="/Images/profile.png" alt="" /> GDSC in Code.
-            </p>{" "}
-            <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
-          </div>
-          <div className="card">
-            <p className="art_name">
-              {" "}
-              05 <img src="/Images/profile.png" alt="" /> GDSC in Code.
-            </p>{" "}
-            <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
-          </div>
-          <div className="card">
-            <p className="art_name">
-              {" "}
-              06 <img src="/Images/profile.png" alt="" /> GDSC in Code.
-            </p>{" "}
-            <p>Code is now available!</p> <p className="time">Nov 21, 10 mins read.</p>
-          </div>
-        </div>
-      </secttion>
-    </>
+      <div className={styles.metadata}>
+        <div>{data?.date} •</div>
+        <div>10 mins read</div>
+      </div>
+    </div>
   );
 };
 

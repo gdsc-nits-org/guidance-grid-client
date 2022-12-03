@@ -1,68 +1,43 @@
-*{
-  font-family: var(--gdsc-font-1);
-}
 .title {
   text-align: center;
   color: var(--gdsc-blue-1-100);
   font-size: 1.5rem;
   font-weight: var(--heading-1-text-weight);
 }
-.searchbar {
+
+.heading {
+  max-width: 300px;
+  color: var(--gdsc-grayish-1-100);
+  font-size: 1.5rem;
+  font-weight: var(--heading-1-text-weight);
+}
+
+.metadata {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-image: url(/Images/Background.png);
-  border-radius: 5vh;
-  box-shadow: var(  --gdsc-grayish-1-100);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  margin: 1rem 6rem;
-  input {
-    width: 60%;
-    height: 15%;
-    outline: none;
-    box-shadow: var(  --gdsc-grayish-1-100);
-    border: 2vh solid white;
-    border-radius: 10vh;
-    text-align: center;
-    color: var(--gdsc-grayish-1-100);
-    font-weight: var( --paragraph-2-text-weight);
-    font-size: 1rem;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: var(--paragraph-2-text-weight);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  .bold {
+    font-weight: var(--heading-1-text-weight);
+  }
+  .author {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
   }
 }
-.trending {
-  color: var(--gdsc-grayish-1-100);
-  h3 {
-    margin: 2rem 8rem;
-  }
-  .trendart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 8rem;
-  }
-  .card {
-    margin: 0.5rem 1rem;
-    padding: 0.5rem;
-  }
-  .card p img {
-    height: 3.5vh;
-    width: 3.5vh;
-  }
-  .art_name {
-    font-size: 1rem;
-    font-weight: var( --heading-1-text-weight);
-  }
-  .content {
-    font-size: 1.2rem;
-    font-weight: var(  --heading-1-text-weight);
-    padding-left: 3.5rem;
-  }
-  .time {
-    font-size: 0.8rem;
-    font-weight: var(--paragraph-2-text-weight);
-    padding-left: 3.5rem;
 
-  }
+.rank {
+  font-weight: var(--heading-1-text-weight);
+  font-size: 1.8rem;
+  color: var(--grey-text-1-100);
+  filter: opacity(0.5);
+}
+
+.card {
+  margin: 1rem auto;
+  text-align: center;
 }

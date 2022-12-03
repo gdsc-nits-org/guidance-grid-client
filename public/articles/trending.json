@@ -3,85 +3,97 @@
     "msg" : [
         {
             "id": 342432,
-            "title": "Why should you not use ReactJS and move your project to Angular as soon as possible",
+            "rank" : 1,
+            "url": "/post/test",
+            "title": "Code is now available",
             "author": {
-              "name": "John Doe",
+              "name": "GDSC",
               "profile": "/user/1414341",
               "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
             },
             "date": "Nov 21",
             "domain": {
-              "name": "Web Development",
+              "name": "Code",
               "url": "/domain/web"
             }
           },
           {
             "id": 342432,
-            "title": "Why should you not use ReactJS and move your project to Angular as soon as possible",
+            "rank" : 2,
+            "url": "/post/test",
+            "title": "Code is now available",
             "author": {
-              "name": "John Doe",
+              "name": "GDSC",
               "profile": "/user/1414341",
               "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
             },
             "date": "Nov 21",
             "domain": {
-              "name": "Web Development",
+              "name": "Code",
               "url": "/domain/web"
             }
           },
           {
             "id": 342432,
-            "title": "Why should you not use ReactJS and move your project to Angular as soon as possible",
+            "url": "/post/test",
+            "rank" : 3,
+            "title": "Code is now available",
             "author": {
-              "name": "John Doe",
+              "name": "GDSC",
               "profile": "/user/1414341",
               "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
             },
             "date": "Nov 21",
             "domain": {
-              "name": "Web Development",
+              "name": "Code",
               "url": "/domain/web"
             }
           },
           {
             "id": 342432,
-            "title": "Why should you not use ReactJS and move your project to Angular as soon as possible",
+            "url": "/post/test",
+            "rank" : 4,
+            "title": "Code is now available",
             "author": {
-              "name": "John Doe",
+              "name": "GDSC",
               "profile": "/user/1414341",
               "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
             },
             "date": "Nov 21",
             "domain": {
-              "name": "Web Development",
+              "name": "Code",
               "url": "/domain/web"
             }
           },
           {
             "id": 342432,
-            "title": "Why should you not use ReactJS and move your project to Angular as soon as possible",
+            "url": "/post/test",
+            "rank" : 5,
+            "title": "Code is now available",
             "author": {
-              "name": "John Doe",
+              "name": "GDSC",
               "profile": "/user/1414341",
               "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
             },
             "date": "Nov 21",
             "domain": {
-              "name": "Web Development",
+              "name": "Code",
               "url": "/domain/web"
             }
           },
           {
             "id": 342432,
-            "title": "Why should you not use ReactJS and move your project to Angular as soon as possible",
+            "url": "/post/test",
+            "rank" : 6,
+            "title": "Code is now available",
             "author": {
-              "name": "John Doe",
+              "name": "GDSC",
               "profile": "/user/1414341",
               "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
             },
             "date": "Nov 21",
             "domain": {
-              "name": "Web Development",
+              "name": "Code",
               "url": "/domain/web"
             }
           }
