@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
-    setToggle(prevToggleValue => !prevToggleValue);
+    setToggle((prevToggleValue) => !prevToggleValue);
   };
 
   const changeToggle = () => {
@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav className={toggle ? `${styles.navbar} ${styles.expanded}` : styles.navbar}>
       <Link className={styles.left} to="/">
-        <img src="./images/logo.svg" alt="logo" />
+        <img src="/images/logo.svg" alt="logo" />
       </Link>
       <div className={styles.right}>
         <button className={styles.toggleIcon} onClick={handleToggle}>
@@ -49,7 +49,7 @@ const Navbar = () => {
           >
             Resources
           </NavLink>
-          <Link className={`${styles.profile} ${styles.active}`} to="/">
+          <Link className={`${styles.profile} ${styles.active}`} to="/user/profile">
             <Icon icon="healthicons:ui-user-profile" width="37" height="37" />
           </Link>
         </div>
