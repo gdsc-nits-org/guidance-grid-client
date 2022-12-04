@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Icon } from "@iconify-icon/react";
 import styles from "./Navbar.module.scss";
-// import logo from "./GDSC-Logo.png";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,9 +21,9 @@ const Navbar = () => {
 
   return (
     <nav className={toggle ? `${styles.navbar} ${styles.expanded}` : styles.navbar}>
-      <div className={styles.left}>
+      <Link className={styles.left} to="/">
         <img src="./images/logo.svg" alt="logo" />
-      </div>
+      </Link>
       <div className={styles.right}>
         <button className={styles.toggleIcon} onClick={handleToggle}>
           {toggle ? (
@@ -46,13 +45,13 @@ const Navbar = () => {
             className={({ isActive }) =>
               isActive ? `${styles.navlinks} ${styles.active}` : styles.navlinks
             }
-            to="/dc"
+            to="/resources"
           >
             Resources
           </NavLink>
-          <div className={`${styles.profile} ${styles.active}`}>
+          <Link className={`${styles.profile} ${styles.active}`} to="/">
             <Icon icon="healthicons:ui-user-profile" width="37" height="37" />
-          </div>
+          </Link>
         </div>
       </div>
     </nav>
