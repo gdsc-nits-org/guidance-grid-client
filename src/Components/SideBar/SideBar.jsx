@@ -2,34 +2,36 @@ import styles from "./SideBar.module.scss";
 
 const SideBar = () => {
   const tags = [
-    "Kotlin",
-    "Data Structures",
+    "node",
     "Vue Js",
-    "Android",
-    "Embedded Structures",
-    "ReactJs",
-    "Node",
-    "Placements",
-    "Kotlin",
-    "Embedded Structures",
-    "react",
-    "vueJs",
-    "pnpm",
-    "react",
-    "vueJs",
+    "react Js",
+    "placements",
+    "django",
+    "Java",
+    "embedded systems",
+    "kotlin",
+    "express",
+    "SQL",
+    "Systenm architect",
+    "Data Structures",
+    "Ruby",
+    "pycharm",
+    "typescript",
   ];
 
   const bookmarkArray = [
-    "What is ReactJS and how can it be used development",
-    "13 reasons Why no one loves npm anymore",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing",
-    "Why should you not use ReactJS and move your project to Angular as soon as possible",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing ",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!",
+    "Lorem, ipsum dolor sit amet consectetur adipisicing.",
+    "Lorem ipsum dolor sit amet consectetur.",
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing.",
     "Lorem ipsum dolor sit amet consectetur adipisicing.",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing",
-    "What is ReactJS and how can it be used development",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing",
-    "Lorem ipsum dolor sit amet, consectetur adipiscing",
+    "Lorem ipsum dolor sit amet.",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+    "orem ipsum dolor sit amet consectetur.",
+    "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing.",
   ];
 
   return (
@@ -48,6 +50,7 @@ const SideBar = () => {
         {bookmarkArray.slice(0, 5).map((mark) => (
           <a href="/">{mark}</a>
         ))}
+
         <a href="/">Read more</a>
       </div>
     </div>
