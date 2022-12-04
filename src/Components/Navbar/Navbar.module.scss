@@ -1,143 +1,142 @@
 @mixin flexDisplay($position, $direction) {
-    display: flex;
-    flex-direction: $direction;
-    align-items: center;
-    justify-content: $position;
-  }
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: $position;
+}
 
+.navbar {
+  background-color: #fff;
+  @include flexDisplay(space-between, row);
+  height: 4rem;
+  box-shadow: 0px 4px 12px 0px var(--gdsc-shadow-1-100);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+
+.expanded {
+  background-color: #fff;
+  box-shadow: 0px 4px 12px 0px var(--gdsc-shadow-1-100);
+}
+
+.left {
+  margin-left: 30px;
+  img {
+    width: 3.5rem;
+  }
+}
+
+.right {
+  @include flexDisplay(space-around, row);
+  width: 30%;
+  margin-right: 3%;
+}
+
+.links {
+  @include flexDisplay(center, row);
+}
+
+.navlinks {
+  color: rgb(116, 114, 114);
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-right: 20%;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.15s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.25rem;
+    bottom: -0.125rem;
+    left: 0;
+    background-color: var(--gdsc-blue-3-100);
+    border-radius: 20%;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+}
+
+.active {
+  color: black;
+
+  &::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+.profile {
+  margin-left: 15%;
+}
+
+.toggleIcon {
+  display: none;
+  background-color: #fff;
+  border: none;
+}
+
+@media (max-width: 1000px) {
   .navbar {
-    background-color: #fff;
-    margin-bottom: 1%;
-    @include flexDisplay(space-between, row);
-    height: 4rem;
-    box-shadow: 0px 4px 12px 0px var(--gdsc-shadow-1-100);
-    position: sticky;
-    top: 0;
-    z-index: 9;
-    transition: all 0.3s ease-out;
-  }
-  
-  .expanded {
-    background-color: #fff;
-    box-shadow: 0px 4px 12px 0px var(--gdsc-shadow-1-100);
-  }
-  
-  .left {
-    margin-left: 30px;
-    img {
-        width: 3.5rem;
-    }
-  }
-  
-  .right {
-    @include flexDisplay(space-around, row);
-    width: 30%;
-    margin-right: 3%;
-  }
-  
-  .links {
-    @include flexDisplay(center, row);
-  }
-  
-  .navlinks {
-    color: rgb(116, 114, 114);
-    font-weight: 500;
-    font-size: 1.25rem;
-    margin-right: 20%;
-    cursor: pointer;
-    text-decoration: none;
+    transition: 0.5s all ease-in-out;
     position: relative;
-    transition: all 0.15s ease-in-out;
-  
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: .25rem;
-      bottom: -0.125rem;
-      left: 0;
-      background-color: var(--gdsc-blue-3-100);
-      border-radius: 20%;
-      visibility: hidden;
-      -webkit-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-    }
   }
-  
-  .active {
-    color: black;
 
-    &::before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
+  .navbar.expanded {
+    height: 50vh;
   }
-  
-  .profile {
-    margin-left: 15%;
+
+  .navbar.expanded .links {
+    @include flexDisplay(center, column);
+    position: absolute;
+    top: 7.5rem;
+    left: 0;
+    width: 100%;
+    opacity: 1;
   }
-  
+
+  .navbar.expanded .links a {
+    margin: 0.9375rem 0;
+    font-size: 1.5rem;
+  }
+
   .toggleIcon {
-    display: none;
-    background-color: #fff;
-    border: none;
+    display: block;
+    position: absolute;
+    top: 0.8rem;
+    right: 2.5rem;
   }
-  
-  @media (max-width: 1000px) {
-    .navbar {
-      transition: 0.5s all ease-in-out;
-      position: relative;
-    }
-  
-    .navbar.expanded {
-      height: 50vh;
-    }
-  
-    .navbar.expanded .links {
-      @include flexDisplay(center, column);
-      position: absolute;
-      top: 7.5rem;
-      left: 0;
-      width: 100%;
-      opacity: 1;
-    }
-  
-    .navbar.expanded .links a {
-      margin: 0.9375rem 0;
-      font-size: 1.5rem;
-    }
-  
-    .toggleIcon {
-      display: block;
-      position: absolute;
-      top: 0.8rem;
-      right: 2.5rem;
-    }
-  
-    .left {
-      position: absolute;
-      top: 1rem;
-    }
-  
-    .links {
-      @include flexDisplay(center, column);
-      position: absolute;
-      top: -18.75rem;
-      left: 0;
-      width: 100%;
-      opacity: 0;
-      transition: all 0.5s ease-in-out;
-    }
-  
-    .links a {
-      margin: 0.9375rem 0;
-      font-size: 1.5rem;
-    }
-  
-    .profile {
-      margin: 0;
-    }
+
+  .left {
+    position: absolute;
+    top: 1rem;
   }
+
+  .links {
+    @include flexDisplay(center, column);
+    position: absolute;
+    top: -18.75rem;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .links a {
+    margin: 0.9375rem 0;
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    margin: 0;
+  }
+}
