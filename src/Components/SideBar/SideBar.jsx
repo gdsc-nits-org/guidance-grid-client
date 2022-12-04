@@ -24,7 +24,7 @@ const SideBar = () => {
         <h4>Search by tags</h4>
         {bookmarkArray.slice(0, 5).map((mark) => {
           return (
-            <a href="/" key={mark.markedContent}>
+            <a href="/" key={mark.id}>
               {mark.markedContent}
             </a>
           );
