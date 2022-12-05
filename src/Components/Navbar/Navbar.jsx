@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Icon } from "@iconify-icon/react";
 import styles from "./Navbar.module.scss";
@@ -10,6 +10,17 @@ const Navbar = () => {
     setToggle(prevToggleValue => !prevToggleValue);
   };
 
+  function useEvent(event, handler, passive = false) {
+    useEffect(() => {
+      window.addEventListener(event, handler, passive)
+      
+      // this will clean up the event every time the component is re-rendered
+      return function cleanup() {
+        window.removeEventListener(event, handler)
+      }
+    })
+  }
+
   const changeToggle = () => {
     if (window.scrollY >= 90 && window.innerWidth > 1000) {
       setToggle(true);
@@ -17,10 +28,11 @@ const Navbar = () => {
       setToggle(false);
     }
   };
-  window.addEventListener("scroll", changeToggle);
+
+  useEvent("scroll", changeToggle);
 
   return (
-    <nav className={toggle ? `${styles.navbar} ${styles.expanded}` : styles.navbar}>
+    <nav className={toggle ? `${styles.navbar} ${styles.expanded}` : styles.navbar} onScroll={()=>setToggle(false)}>
       <Link className={styles.left} to="/">
         <img src="./images/logo.svg" alt="logo" />
       </Link>
