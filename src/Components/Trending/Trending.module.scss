@@ -1,37 +1,41 @@
 .card {
-  margin: 2.5rem auto;
-  text-align: center;
-}
-.heading {
-  max-width: 300px;
-  color: var(--gdsc-grayish-1-100);
-  font-size: 1.3rem;
-  font-weight: var(--heading-1-text-weight);
-  text-align: right;
-}
-
-.metadata {
-  display: flex;
+  display: grid;
+  grid-template-columns: 3rem 2rem 4rem 1fr;
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  font-weight: var(--paragraph-2-text-weight);
-  font-size: 1rem;
-  white-space: nowrap;
-  .bold {
-    font-weight: var(--heading-1-text-weight);
-  }
-  .author {
-    display: flex;
-    gap: 0.4rem;
-    align-items: center;
-  }
+  margin: 0rem 3rem;
 }
-
 .rank {
   font-weight: var(--heading-1-text-weight);
   font-size: 1.8rem;
   color: var(--grey-text-1-100);
   filter: opacity(0.5);
   z-index: -1;
+}
+.metadata {
+  font-weight: var(--paragraph-2-text-weight);
+  font-size: 1rem;
+  // white-space: nowrap;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  .bold {
+    font-weight: var(--heading-1-text-weight);
+  }
+}
+.heading {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  color: var(--gdsc-grayish-1-100);
+  font-size: 1.3rem;
+  font-weight: var(--heading-1-text-weight);
+}
+.date {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-weight: var(--paragraph-2-text-weight);
+  font-size: 0.8rem;
+}
+.time {
+  font-weight: var(--paragraph-2-text-weight);
+  font-size: 0.8rem;
 }
