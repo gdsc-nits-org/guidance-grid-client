@@ -1,15 +1,13 @@
-.title {
+.card {
+  margin: 2.5rem auto;
   text-align: center;
-  color: var(--gdsc-blue-1-100);
-  font-size: 1.5rem;
-  font-weight: var(--heading-1-text-weight);
 }
-
 .heading {
   max-width: 300px;
   color: var(--gdsc-grayish-1-100);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: var(--heading-1-text-weight);
+  text-align: right;
 }
 
 .metadata {
@@ -18,7 +16,7 @@
   justify-content: center;
   gap: 0.4rem;
   font-weight: var(--paragraph-2-text-weight);
-  font-size: 0.8rem;
+  font-size: 1rem;
   white-space: nowrap;
   .bold {
     font-weight: var(--heading-1-text-weight);
@@ -35,9 +33,5 @@
   font-size: 1.8rem;
   color: var(--grey-text-1-100);
   filter: opacity(0.5);
-}
-
-.card {
-  margin: 1rem auto;
-  text-align: center;
+  z-index: -1;
 }

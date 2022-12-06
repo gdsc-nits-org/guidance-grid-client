@@ -1,14 +1,15 @@
 .head {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: var(--heading-1-text-weight);
   color: var(--gdsc-blue-1-100);
   text-align: center;
+  margin: 3rem;
 }
 .searchbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/background.png);
+  background-image: url(/Images/Background.png);
   border-radius: 5vh;
   box-shadow: var(--gdsc-grayish-1-100);
   background-size: cover;

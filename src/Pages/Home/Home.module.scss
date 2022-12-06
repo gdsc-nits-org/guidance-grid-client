@@ -1,14 +1,14 @@
-// This is a part of Template
 .home {
   min-height: 100vh;
+  padding: 10vh 2vh;
   h1 {
     font-weight: bold;
   }
   .trendTitle {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: var(--heading-1-text-weight);
     color: var(--gdsc-grayish-1-100);
-    margin: 1rem 0rem 0rem 5rem;
+    margin: 3rem 0rem 0rem 5rem;
   }
   .trending {
     display: grid;
