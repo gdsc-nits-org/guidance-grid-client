@@ -1,5 +1,5 @@
 import { useFetchData } from "../../Hooks";
-import { ArticleCard, Loading } from "../../Components";
+import { ArticleCard, Loading, SideBar } from "../../Components";
 
 import style from "./Home.module.scss";
 
@@ -8,11 +8,17 @@ const Home = () => {
 
   return (
     <main className={style.home}>
-      {articleRespState.loading && <Loading />}
-      {articleRespState.error && <div>Error</div>}
-      {articleRespState.response.map((item, index) => {
-        return <ArticleCard data={item} id={index} key={item?.id} />;
-      })}
+      <div className={style.articlesection}>
+        <div className={style.article}>
+          {articleRespState.loading && <Loading />}
+          {articleRespState.error && <div>Error</div>}
+          {articleRespState.response.map((item, index) => (
+            <ArticleCard data={item} id={index} key={item?.id} />
+          ))}
+        </div>
+
+        <SideBar />
+      </div>
     </main>
   );
 };
