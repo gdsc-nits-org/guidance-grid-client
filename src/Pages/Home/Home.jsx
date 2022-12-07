@@ -1,5 +1,5 @@
 import { useFetchData } from "../../Hooks";
-import { Button, ArticleCard, Loading, SideBar } from "../../Components";
+import { ArticleCard, Loading, SideBar } from "../../Components";
 
 import style from "./Home.module.scss";
 
@@ -8,8 +8,6 @@ const Home = () => {
 
   return (
     <main className={style.home}>
-      <h1>Home Page</h1>
-      <Button type="button" />
       <div className={style.articlesection}>
         <div className={style.article}>
           {articleRespState.loading && <Loading />}
