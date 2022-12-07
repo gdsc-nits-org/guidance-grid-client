@@ -1,3 +1,4 @@
 import useFetchData from "./useFetchData";
+import useEvent from "./useEvent";
 
-export { useFetchData };
+export { useFetchData, useEvent };
