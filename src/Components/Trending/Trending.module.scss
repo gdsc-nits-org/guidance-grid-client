@@ -1,9 +1,9 @@
 .card {
   display: grid;
-  grid-template-columns: 3rem 2rem 4rem 1fr;
+  grid-template-columns: 3rem 2rem 3rem 1fr;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
-  margin: 0rem 3rem;
+  margin: 0.5rem 0.5rem;
 }
 .rank {
   font-weight: var(--heading-1-text-weight);
@@ -15,7 +15,6 @@
 .metadata {
   font-weight: var(--paragraph-2-text-weight);
   font-size: 1rem;
-  // white-space: nowrap;
   grid-column-start: 3;
   grid-column-end: 5;
   .bold {
@@ -26,7 +25,7 @@
   grid-column-start: 3;
   grid-column-end: 5;
   color: var(--gdsc-grayish-1-100);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: var(--heading-1-text-weight);
 }
 .date {
@@ -38,4 +37,93 @@
 .time {
   font-weight: var(--paragraph-2-text-weight);
   font-size: 0.8rem;
+}
+@media screen and (width < 1125px) {
+  .rank {
+    font-size: 1.5rem;
+  }
+  .metadata {
+    font-size: 0.8rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+  .date,
+  .time {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (width < 989px) {
+  .heading {
+    font-size: 0.85rem;
+  }
+}
+@media screen and (width < 900px) {
+  .rank {
+    font-size: 1.8rem;
+  }
+  .metadata {
+    font-size: 1rem;
+  }
+  .heading {
+    font-size: 1.2rem;
+  }
+  .date,
+  .time {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (width < 751px) {
+  .rank {
+    font-size: 1.5rem;
+  }
+  .metadata {
+    font-size: 0.8rem;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+  .date,
+  .time {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (width < 989px) {
+  .card {
+    grid-template-columns: 2.5rem 2rem 3rem 1fr;
+  }
+  .heading {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (width < 606px) {
+  .card {
+    margin: 0.2rem 0.2rem;
+    grid-template-columns: 1.5rem 1.5rem 2.5rem 1fr;
+  }
+  .rank {
+    font-size: 1.1rem;
+  }
+  .metadata {
+    font-size: 0.8rem;
+  }
+  .heading {
+    font-size: 0.9rem;
+  }
+  .date,
+  .time {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (width < 530) {
+  .card {
+    margin: 0.2rem 0.2rem;
+    grid-template-columns: 1.2rem 1.2rem 2rem 1fr;
+  }
+  .heading {
+    font-size: 0.55rem;
+  }
+  .metadata {
+    font-size: 0.45rem;
+  }
 }

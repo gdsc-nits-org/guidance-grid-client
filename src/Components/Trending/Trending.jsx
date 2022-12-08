@@ -24,7 +24,7 @@ const Trending = ({ data = {} }) => {
         <Link to={data?.url}>{data?.title}</Link>
       </div>
       <div className={styles.date}>
-        <div>{data?.date} •</div>
+        <div>{data?.date} • </div>
       </div>
       <div className={styles.time}>10 mins read</div>
     </div>

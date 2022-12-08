@@ -15,7 +15,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;
-  margin: 1rem 5rem;
+  margin: 1rem 3rem;
   input {
     width: 60%;
     height: 15%;
@@ -29,14 +29,23 @@
     font-size: 1rem;
   }
 }
-@media screen and (width < 900px) {
+@media screen and (width < 1030px) {
+  .head {
+    margin: 1rem;
+    font-size: 1rem;
+  }
   .searchbar {
-    height: 30vh;
-    width: 100%;
+    height: 35vh;
     box-sizing: border-box;
     margin: 1rem 1rem;
   }
   .input {
     width: auto;
+  }
+}
+@media screen and (width < 800px) {
+  .head {
+    margin: 0.5rem;
+    font-size: 0.8rem;
   }
 }
