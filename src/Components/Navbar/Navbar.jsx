@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Icon } from "@iconify-icon/react";
+import { useEvent } from "../../Hooks";
 import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
@@ -17,7 +18,8 @@ const Navbar = () => {
       setToggle(false);
     }
   };
-  window.addEventListener("scroll", changeToggle);
+
+  useEvent("scroll", changeToggle);
 
   return (
     <nav className={toggle ? `${styles.navbar} ${styles.expanded}` : styles.navbar}>
