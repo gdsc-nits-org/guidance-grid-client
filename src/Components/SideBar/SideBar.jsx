@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./SideBar.module.scss";
 import sidebarData from "./sidebarData.json";
+
 const SideBar = () => {
   const [tagArray] = useState(sidebarData.tag);
   const [bookmarkArray] = useState(sidebarData.bookmark);
@@ -10,12 +11,10 @@ const SideBar = () => {
     <div className={styles.main}>
       <div className={styles.searchTags}>
         <h4>Search by tags</h4>
-        {tagArray.slice(0, 15).map((tag) => {
+        {tagArray.slice(0, 15).map((tag, idx) => {
           return (
-            <span>
-              <Link to="/" key={tag.id}>
-                {tag.tag}
-              </Link>
+            <span key={idx}>
+              <Link to="/">{tag.tag}</Link>
             </span>
           );
         })}
