@@ -1,6 +1,6 @@
 import { Icon } from "@iconify-icon/react";
 import { useFetchData } from "../../Hooks";
-import { ArticleCard, Loading, Trending, Searchbar } from "../../Components";
+import { ArticleCard, Loading, Trending, Searchbar, SideBar } from "../../Components";
 
 import style from "./Home.module.scss";
 
@@ -19,11 +19,17 @@ const Home = () => {
           <Trending data={item} id={index} key={item?.id} />
         ))}
       </div>
-      {articleRespState.loading && <Loading />}
-      {articleRespState.error && <div>Error</div>}
-      {articleRespState.response.map((item, index) => {
-        return <ArticleCard data={item} id={index} key={item?.id} />;
-      })}
+      <div className={style.articlesection}>
+        <div className={style.article}>
+          {articleRespState.loading && <Loading />}
+          {articleRespState.error && <div>Error</div>}
+          {articleRespState.response.map((item, index) => (
+            <ArticleCard data={item} id={index} key={item?.id} />
+          ))}
+        </div>
+
+        <SideBar />
+      </div>
     </main>
   );
 };

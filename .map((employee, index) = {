@@ -1,0 +1,188 @@
+[33mcommit c6bfa66b2de5e46ca75d384e3887aebaeb303b27[m[33m ([m[1;36mHEAD -> [m[1;32mintegrate-sidebar[m[33m, [m[1;31morigin/integrate-sidebar[m[33m)[m
+Author: Kherkatary <kherkatarysan456@gmail.com>
+Date:   Sat Dec 3 18:44:25 2022 +0530
+
+    merged with footer
+
+[33mcommit 42cc93c6a1662e56f82a7029b1a523e31e161bee[m
+Merge: 5a64420 3707c05
+Author: Kherkatary <kherkatarysan456@gmail.com>
+Date:   Sat Dec 3 18:39:53 2022 +0530
+
+    Merge branch 'home-page' of https://github.com/gdsc-nits-org/guidance-grid-client into integrate-sidebar
+
+[33mcommit 5a64420ff7abad15b42e9703b1f4e1da9f13c85a[m
+Author: Kherkatary <kherkatarysan456@gmail.com>
+Date:   Sat Dec 3 14:18:32 2022 +0530
+
+    modiefied the required changes, reffred by saurav bhaiya
+
+[33mcommit 3707c051f89436892a678c5b5bab5f5c27b50dae[m[33m ([m[1;31morigin/home-page[m[33m)[m
+Author: Adhiraj <adhirajd007@gmail.com>
+Date:   Sat Dec 3 11:21:10 2022 +0530
+
+    ADD: Footer (#5)
+    
+    * intitialise footer
+    
+    * ADD: Root Colors
+    
+    * feat: add footer component
+    
+    * [hotfix] cleaned up css
+    
+    * [improvisation] added logo
+    
+    * [hotfix] fix tags
+    
+    * [hotfix] image import
+            renamed:    public/images/logo.svg -> ../public/images/logo.svg
+    
+    * responsiveness added
+    
+    * [patch] fixed order in mobile view
+    
+    * [fix] resolved reviews
+    
+    * remove unused css
+    
+    Co-authored-by: Saurav Pal <resyfer.dev@gmail.com>
+
+[33mcommit d7ba4af96d9c9495fb495f3f0223e74651708ef9[m
+Author: Adhiraj <adhirajd007@gmail.com>
+Date:   Fri Dec 2 08:24:36 2022 +0530
+
+    [hotfix] fix Home.module.scss (#13)
+
+[33mcommit 5a70c5c5387d12d23e0442f888a5e0ded1f0f985[m
+Author: Kherkatary <kherkatarysan456@gmail.com>
+Date:   Fri Dec 2 01:29:34 2022 +0530
+
+    bookmark font corrected
+
+[33mcommit b431ef0c956f066de47797e222308d2cc2c25cb0[m
+Author: Kherkatary <kherkatarysan456@gmail.com>
+Date:   Thu Dec 1 22:21:49 2022 +0530
+
+    [added sidebar] : Added SideBar component
+
+[33mcommit 5420612986ab49122f2faf108d03860083589ec9[m[33m ([m[1;32mhome-page[m[33m)[m
+Author: Jaydeep Das <jaydeepjd.1125@gmail.com>
+Date:   Thu Dec 1 21:13:50 2022 +0530
+
+    ADD: useFetchData hook
+    
+    * ADD: useFetchData hook
+    
+    This custom hook takes an API endpoint as an argument
+    and returns a stateful response of the following structure:
+    
+    {
+        loading: bool,
+        response: Array [],
+        error:  Error
+    }
+    
+    loading is True until response or error is set.
+    
+    * [PATCH v1]: Resolved Reviews
+
+[33mcommit 63d88c0d7c08aacdcf2761530d9f7c562eb2976e[m
+Author: Jaydeep Das <jaydeepjd.1125@gmail.com>
+Date:   Mon Nov 28 02:43:54 2022 +0530
+
+    Article Card (#6)
+    
+    * ADD: Root Colors
+    
+    * ADD: article card component
+    
+    This commit adds a minimal ArticleCard component along with TagItem Component
+    which can be used to simply create tags for articles.
+    
+    * ADD: bookmark icon
+    
+    * FIX: Resolved Reviews and added basic loading screen
+    
+    Co-authored-by: Saurav Pal <resyfer.dev@gmail.com>
+
+[33mcommit a4727bfb9a01551518a24c1e5eb5bb2539d4223a[m
+Author: Jaydeep Das <jaydeepjd.8914@gmail.com>
+Date:   Fri Nov 25 20:57:24 2022 +0530
+
+    modified readme
+
+[33mcommit d5c4990df13f33eca5936e27c8c8cda6e6d0e613[m
+Merge: 9ea28a3 0449b0a
+Author: Saurav Pal <resyfer.dev@gmail.com>
+Date:   Sat Nov 26 10:26:52 2022 +0530
+
+    Merge pull request #7 from gdsc-nits-org/add-iconify
+    
+    Iconify Package Addition
+
+[33mcommit 0449b0a2ff2c90cf234a863237aa7f2428741ab5[m
+Author: Jaydeep Das <jaydeepjd.8914@gmail.com>
+Date:   Sat Nov 26 02:15:21 2022 +0530
+
+    move iconify from devDep to Dep
+
+[33mcommit 9ea28a3fd2001c9b46eb4436f3501f38893052f0[m
+Merge: 66aa658 4032678
+Author: Pratik Majumdar <63517465+codadept@users.noreply.github.com>
+Date:   Fri Nov 25 23:51:45 2022 +0530
+
+    Merge pull request #4 from gdsc-nits-org/add-iconify
+    
+    [added package]: Added Iconify Icon Pack
+
+[33mcommit 40326787e481155cb8ace3499f35e7c415d67abc[m
+Author: Jaydeep Das <jaydeepjd.8914@gmail.com>
+Date:   Fri Nov 25 23:09:17 2022 +0530
+
+    [added package]: Added Iconify Icon Pack
+
+[33mcommit 66aa6587f28a6678c518e46f3eb22ad994c141d2[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Pratik Majumdar <63517465+codadept@users.noreply.github.com>
+Date:   Sat Nov 19 01:10:50 2022 +0530
+
+    ADD: README
+
+[33mcommit ded05919a758e5c4e2df874b95863f5d19ce4c10[m
+Merge: 8316093 625577f
+Author: Pratik Majumdar <63517465+codadept@users.noreply.github.com>
+Date:   Sat Nov 19 01:09:43 2022 +0530
+
+    Merge pull request #1 from gdsc-nits-org/setup
+    
+    SETUP
+
+[33mcommit 625577f5d627e4c2d49f6c1ca0a5c789a59f82ea[m
+Author: Pratik Majumdar <info.pratikmajumdar@gmail.com>
+Date:   Sat Nov 19 01:07:27 2022 +0530
+
+    SETUP: React Router
+
+[33mcommit 02a7dfb007affde02698034c5d26a2b61f1d5b07[m
+Author: Pratik Majumdar <info.pratikmajumdar@gmail.com>
+Date:   Sat Nov 19 00:45:03 2022 +0530
+
+    SETUP: directory and module scss
+
+[33mcommit 11390423cad943d2b36e036dcde844cb86d81b4b[m
+Author: Pratik Majumdar <info.pratikmajumdar@gmail.com>
+Date:   Fri Nov 18 20:50:02 2022 +0530
+
+    SETUP: eslint, prettier, precommit and lint-staged
+
+[33mcommit 498f71c619f6e0ee5b0fdaf778dae98fc23395ad[m
+Author: Pratik Majumdar <info.pratikmajumdar@gmail.com>
+Date:   Fri Nov 18 19:05:53 2022 +0530
+
+    SETUP: pnpm create & react install
+
+[33mcommit 83160930c3091f27c9b1439b9362b28ce249d166[m
+Author: GDSC NIT Silchar <gdsc@nits.ac.in>
+Date:   Fri Nov 18 19:00:43 2022 +0530
+
+    Initial commit

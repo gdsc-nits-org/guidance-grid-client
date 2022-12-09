@@ -1,0 +1,83 @@
+h4 {
+  width: inherit;
+  text-align: left;
+  margin: 1rem 0.2rem;
+}
+
+.main {
+  float: right;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 36vw;
+  height: 100vh;
+  text-align: center;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.searchTags {
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: auto;
+  width: 18rem;
+
+  span {
+    color: gray;
+    border: 1.5px solid var(--gdsc-bg-1-100);
+    border-radius: 2px;
+    width: auto;
+    white-space: nowrap;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem;
+    margin: 0.3rem;
+    height: fit-content;
+
+    user-select: none;
+
+    &:hover {
+      color: black;
+      border: 1.5px solid var(--gdsc-line-1-100);
+      cursor: pointer;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+.bookmarks {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 18rem;
+
+  a {
+    padding: 0.4rem;
+    text-align: left;
+    width: fit-content;
+    font-size: 0.7rem;
+    font-weight: 300;
+    height: fit-content;
+
+    &:last-of-type {
+      text-align: right;
+      width: 17rem;
+      color: var(--gdsc-blue-1-100);
+    }
+
+    &:hover {
+      color: black;
+      font-weight: 400;
+    }
+  }
+}
