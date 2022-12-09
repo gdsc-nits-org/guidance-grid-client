@@ -1,16 +1,16 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import { Navbar } from "./Components";
-
-import routes from "./routes";
-
-const router = createBrowserRouter(routes);
+import { Routes, Route } from "react-router-dom";
+import { Footer, Navbar } from "./Components";
+import { Home, Error } from "./Pages";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error error="Error" />} />
+      </Routes>
+      <Footer />
     </>
   );
 };
