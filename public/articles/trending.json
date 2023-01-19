@@ -1,0 +1,101 @@
+{
+  "status": 200,
+  "msg": [
+    {
+      "id": 342432,
+      "rank": 1,
+      "url": "/post/test",
+      "title": "Code is now available",
+      "author": {
+        "name": "GDSC",
+        "profile": "/user/1414341",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
+      },
+      "date": "Nov 21",
+      "domain": {
+        "name": "Code",
+        "url": "/domain/web"
+      }
+    },
+    {
+      "id": 342932,
+      "rank": 2,
+      "url": "/post/test",
+      "title": "Code is now available",
+      "author": {
+        "name": "GDSC",
+        "profile": "/user/1414341",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
+      },
+      "date": "Nov 21",
+      "domain": {
+        "name": "Code",
+        "url": "/domain/web"
+      }
+    },
+    {
+      "id": 322432,
+      "url": "/post/test",
+      "rank": 3,
+      "title": "Code is now available",
+      "author": {
+        "name": "GDSC",
+        "profile": "/user/1414341",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
+      },
+      "date": "Nov 21",
+      "domain": {
+        "name": "Code",
+        "url": "/domain/web"
+      }
+    },
+    {
+      "id": 342332,
+      "url": "/post/test",
+      "rank": 4,
+      "title": "Code is now available",
+      "author": {
+        "name": "GDSC",
+        "profile": "/user/1414341",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
+      },
+      "date": "Nov 21",
+      "domain": {
+        "name": "Code",
+        "url": "/domain/web"
+      }
+    },
+    {
+      "id": 346432,
+      "url": "/post/test",
+      "rank": 5,
+      "title": "Code is now available",
+      "author": {
+        "name": "GDSC",
+        "profile": "/user/1414341",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
+      },
+      "date": "Nov 21",
+      "domain": {
+        "name": "Code",
+        "url": "/domain/web"
+      }
+    },
+    {
+      "id": 342412,
+      "url": "/post/test",
+      "rank": 6,
+      "title": "Code is now available",
+      "author": {
+        "name": "GDSC",
+        "profile": "/user/1414341",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/GitHub_Mark.png"
+      },
+      "date": "Nov 21",
+      "domain": {
+        "name": "Code",
+        "url": "/domain/web"
+      }
+    }
+  ]
+}
