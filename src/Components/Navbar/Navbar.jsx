@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Icon } from "@iconify-icon/react";
 import styles from "./Navbar.module.scss";
+import { useEvent } from "../../Hooks";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -9,17 +10,6 @@ const Navbar = () => {
   const handleToggle = () => {
     setToggle((prevToggleValue) => !prevToggleValue);
   };
-
-  function useEvent(event, handler, passive = false) {
-    useEffect(() => {
-      window.addEventListener(event, handler, passive)
-      
-      // this will clean up the event every time the component is re-rendered
-      return function cleanup() {
-        window.removeEventListener(event, handler)
-      }
-    })
-  }
 
   const changeToggle = () => {
     if (window.scrollY >= 90 && window.innerWidth > 1000) {
