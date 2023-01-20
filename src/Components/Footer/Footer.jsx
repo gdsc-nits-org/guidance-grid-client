@@ -44,7 +44,7 @@ const Footer = () => {
               <Icon icon="ion:logo-linkedin" width="30" />
             </a>
             <a href="https://www.instagram.com/gdsc_nits/" target="_blank">
-              <Icon icon="ri:instagram-line" width="30" />
+              <Icon icon="uil:instagram-alt" width="32" />
             </a>
           </div>
           <div className={styles.text}>
