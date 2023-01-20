@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className={toggle ? `${styles.navbar} ${styles.expanded}` : styles.navbar}>
       <Link className={styles.left} to="/">
-        <img src="/images/logo.svg" alt="logo" />
+        <img src="/images/gg.svg" alt="logo" />
       </Link>
       <div className={styles.right}>
         <button className={styles.toggleIcon} onClick={handleToggle}>
