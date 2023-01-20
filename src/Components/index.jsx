@@ -7,6 +7,8 @@ import Loading from "./Loading/Loading";
 import Trending from "./Trending/Trending";
 import Searchbar from "./Searchbar/Searchbar";
 import SideBar from "./SideBar/SideBar";
+import BookmarkCard from "./BookmarkCard/BookmarkCard";
+import TopWriters from "./TopWriters/TopWriters";
 
 export {
   Button,
@@ -18,4 +20,6 @@ export {
   Footer,
   Searchbar,
   SideBar,
+  BookmarkCard,
+  TopWriters,
 };
