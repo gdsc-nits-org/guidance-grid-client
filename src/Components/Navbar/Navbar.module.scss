@@ -14,7 +14,6 @@
   top: 0;
   width: 100%;
   transition: all 0.3s ease-out;
-  z-index: 1000;
 }
 
 .expanded {
@@ -23,9 +22,12 @@
 }
 
 .left {
-  margin-left: 30px;
+  @include flexDisplay(center, row);
+  margin-left: 50px;
+  transition: all 0.3s ease-in-out;
   img {
-    width: 3.5rem;
+    width: 3rem;
+    height: auto;
   }
 }
 
@@ -42,7 +44,7 @@
 .navlinks {
   color: rgb(116, 114, 114);
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   margin-right: 20%;
   cursor: pointer;
   text-decoration: none;
@@ -54,7 +56,7 @@
     position: absolute;
     width: 100%;
     height: 0.25rem;
-    bottom: -0.125rem;
+    bottom: -0.25rem;
     left: 0;
     background-color: var(--gdsc-blue-3-100);
     border-radius: 20%;
@@ -77,6 +79,7 @@
 }
 
 .profile {
+  @include flexDisplay(row, center);
   margin-left: 15%;
 }
 
@@ -94,6 +97,10 @@
 
   .navbar.expanded {
     height: 50vh;
+
+    .left {
+      top: 1rem;
+    }
   }
 
   .navbar.expanded .links {
@@ -107,7 +114,7 @@
 
   .navbar.expanded .links a {
     margin: 0.9375rem 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .toggleIcon {
@@ -118,8 +125,9 @@
   }
 
   .left {
+    display: block;
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
   }
 
   .links {
