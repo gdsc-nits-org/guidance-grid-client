@@ -1,0 +1,30 @@
+.page {
+  margin-top: 8rem;
+
+  .heading {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: var(--heading-1-text-weight);
+    color: var(--gdsc-grayish-1-100);
+    margin-bottom: 1rem;
+  }
+
+  .main {
+    padding: 6rem 0;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+  }
+  .topauthors {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    gap: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+}

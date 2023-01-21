@@ -1,0 +1,17 @@
+.main {
+  .heading {
+    font-size: 2rem;
+    font-weight: var(--heading-1-text-weight);
+    color: var(--gdsc-grayish-1-100);
+    margin-bottom: 1rem;
+  }
+  .profiles {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    .authorname {
+      font-weight: var(--heading-1-text-weight);
+    }
+  }
+}
