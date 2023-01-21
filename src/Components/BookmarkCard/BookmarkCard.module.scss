@@ -42,6 +42,11 @@
   .metadata {
     margin-top: 1rem;
     display: flex;
+    .info {
+      display: flex;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+    }
 
     .profile {
       display: flex;

@@ -26,10 +26,24 @@ const BookmarkCard = ({ data }) => {
       </div>
       <div className={styles.subheading}>{data?.content}</div>
       <div className={styles.metadata}>
-        <div className={styles.profile}>
+        <Link className={styles.profile} to={data.author.profile}>
           <img height={25} alt="author" src={data?.author?.image} />
-          <span className={styles.boldsmall}>{data?.author?.name}</span>
-        </div>
+          <div>
+            <span className={styles.boldsmall}>{data?.author?.name}</span>
+            <div className={styles.info}>
+              <span>
+                {data?.metadata?.views > 1000
+                  ? `${(data.metadata.views / 1000).toFixed(1)}k views`
+                  : `${data?.metadata?.views} views`}
+              </span>
+              <span>
+                {data?.metadata?.upvotes > 1000
+                  ? `${(data.metadata.upvotes / 1000).toFixed(1)}k upvotes`
+                  : `${data?.metadata?.upvotes} upvotes`}
+              </span>
+            </div>
+          </div>
+        </Link>
         <div className={styles.controls}>
           {controlIcons.map((item, index) => {
             return (
