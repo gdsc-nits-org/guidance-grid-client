@@ -7,36 +7,69 @@
         "tag": "node"
       },
       {
-        "id": 456,
+        "id": 124,
         "tag": "Embedded System"
       },
       {
-        "id": 789,
+        "id": 125,
         "tag": "React Js"
       },
       {
-        "id": 910,
+        "id": 126,
         "tag": "Kotlin"
       },
       {
-        "id": 789,
+        "id": 135,
+        "tag": "Firebase"
+      },
+      {
+        "id": 136,
+        "tag": "Typescript"
+      },
+      {
+        "id": 137,
+        "tag": "GitLab"
+      },
+      {
+        "id": 138,
+        "tag": "Shell"
+      },
+      {
+        "id": 127,
         "tag": "algorithms"
       },
       {
-        "id": 789,
+        "id": 128,
         "tag": "pnpm"
       },
       {
-        "id": 789,
+        "id": 129,
         "tag": "pycharm"
       },
       {
-        "id": 789,
+        "id": 130,
         "tag": "sass"
       },
       {
-        "id": 789,
-        "tag": "data structures"
+        "id": 131,
+        "tag": "Kubernetes"
+      },
+      {
+        "id": 132,
+        "tag": "MySQL"
+      },
+      {
+        "id": 133,
+        "tag": "postgreSQL"
+      },
+      {
+        "id": 134,
+        "tag": "Linter"
+      },
+
+      {
+        "id": 139,
+        "tag": "Ubuntu"
       }
     ],
     "bookmark": [
