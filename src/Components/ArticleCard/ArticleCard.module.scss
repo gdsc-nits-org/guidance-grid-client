@@ -8,6 +8,9 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    .icon {
+      user-select: none;
+    }
   }
 
   .title {
