@@ -28,6 +28,7 @@ const ArticleCard = ({ data }) => {
           <div className={styles.title}>{data?.title}</div>
         </Link>
         <Icon
+          className={styles.icon}
           icon={
             bookmarked ? "material-symbols:bookmark" : "material-symbols:bookmark-outline"
           }

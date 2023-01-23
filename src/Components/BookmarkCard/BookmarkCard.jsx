@@ -47,13 +47,13 @@ const BookmarkCard = ({ data }) => {
         <div className={styles.controls}>
           {controlIcons.map((item, index) => {
             return (
-              <div key={index}>
-                <Icon
-                  icon={item.iconState ? item.filledIcon : item.outlinedIcon}
-                  height="30"
-                  onClick={item.iconStateHandler}
-                />
-              </div>
+              <Icon
+                id={index}
+                className={styles.icon}
+                icon={item.iconState ? item.filledIcon : item.outlinedIcon}
+                height="30"
+                onClick={item.iconStateHandler}
+              />
             );
           })}
         </div>
