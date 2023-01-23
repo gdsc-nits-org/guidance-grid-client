@@ -1,0 +1,114 @@
+{
+  "status": 200,
+  "msg": {
+    "tags": [
+      {
+        "id": 123,
+        "tag": "node"
+      },
+      {
+        "id": 124,
+        "tag": "Embedded System"
+      },
+      {
+        "id": 125,
+        "tag": "React Js"
+      },
+      {
+        "id": 126,
+        "tag": "Kotlin"
+      },
+      {
+        "id": 135,
+        "tag": "Firebase"
+      },
+      {
+        "id": 136,
+        "tag": "Typescript"
+      },
+      {
+        "id": 137,
+        "tag": "GitLab"
+      },
+      {
+        "id": 138,
+        "tag": "Shell"
+      },
+      {
+        "id": 127,
+        "tag": "algorithms"
+      },
+      {
+        "id": 128,
+        "tag": "pnpm"
+      },
+      {
+        "id": 129,
+        "tag": "pycharm"
+      },
+      {
+        "id": 130,
+        "tag": "sass"
+      },
+      {
+        "id": 131,
+        "tag": "Kubernetes"
+      },
+      {
+        "id": 132,
+        "tag": "MySQL"
+      },
+      {
+        "id": 133,
+        "tag": "postgreSQL"
+      },
+      {
+        "id": 134,
+        "tag": "Linter"
+      },
+
+      {
+        "id": 139,
+        "tag": "Ubuntu"
+      }
+    ],
+    "bookmark": [
+      {
+        "id": 86,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 97,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 257,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 864,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 886,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 806,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 866,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 8126,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      },
+      {
+        "id": 86,
+        "markedContent": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, expedita!"
+      }
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Icon } from "@iconify-icon/react";
-import { useEvent } from "../../Hooks";
 import styles from "./Navbar.module.scss";
+import { useEvent } from "../../Hooks";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

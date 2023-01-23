@@ -1,5 +1,5 @@
 @mixin header($n) {
-  padding-top: 1.5rem;
+  padding-top: 1.4rem;
   // padding-bottom: 0.5rem;
   font-weight: $n;
 }
@@ -13,6 +13,9 @@
   // text-align: center;
   justify-content: center;
   color: var(--grey-text-1-100);
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
 }
 
 @mixin line($c) {
@@ -24,6 +27,7 @@
 }
 
 .wrapper {
+  margin-top: 5rem;
   background-color: #ffffff;
   position: relative;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
@@ -72,7 +76,7 @@ a {
   }
 }
 
-.text a {
+a {
   color: var(--grey-text-1-100);
   &:hover {
     color: var(--grey-text-1-70);
@@ -117,7 +121,10 @@ a {
   font-size: 1.7rem;
   text-align: center;
   @media (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 373px) {
+    font-size: 0.7rem;
   }
 }
 
@@ -125,7 +132,11 @@ a {
   width: 5rem;
   padding-right: 1rem;
   @media (max-width: 768px) {
-    font-size: 1.5rem;
-    padding-right: 0.7rem;
+    width: 3rem;
+    padding-right: 0.5rem;
+  }
+  @media (max-width: 373px) {
+    width: 2rem;
+    padding-right: 0.4rem;
   }
 }
