@@ -49,6 +49,7 @@ const BookmarkCard = ({ data }) => {
             return (
               <Icon
                 id={index}
+                key={index}
                 className={styles.icon}
                 icon={item.iconState ? item.filledIcon : item.outlinedIcon}
                 height="30"
