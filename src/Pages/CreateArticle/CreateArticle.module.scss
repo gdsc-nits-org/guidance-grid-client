@@ -1,0 +1,52 @@
+.createArticle {
+  min-height: 100vh;
+  padding: 10vh 2vh;
+  margin: 3.5rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+.leftSec{
+margin: 1rem;
+}
+.title, .content, .tags, .submit{
+  margin: 1rem;
+  padding: 1rem;
+}
+.title, .content, .tags{
+  border: 1px solid var(--gdsc-grayish-1-100);
+  border-radius: 7px ;
+  display: inline-block;
+}
+.secHead{
+  font-size: 3rem;
+  font-weight: var(--heading-1-text-weight);
+  color: var(--gdsc-blue-3-100);
+}
+.titleHead, .contentHead, .tagHead{
+  font-size: 1.5rem;
+  font-weight: var(--heading-2-text-weight);
+  color: var(--gdsc-dark-1-100);
+  margin: 0.25rem;
+}
+.leftSec p, input{
+  margin: 0.25rem;
+  color: var(--gdsc-neutral-1-100);
+}
+input{
+  border: 1px solid var(--gdsc-grayish-1-100);
+  border-radius: 7px ;
+}
+.leftSec input{
+  padding: 1rem;
+  width: 65vw;
+}
+.btn{
+  padding: 0.5rem 1.1rem;
+  background-color: var(--gdsc-blue-3-100);
+  font-size: 1.2rem;
+  font-weight: var(--heading-1-text-weight);
+  color: white;
+  width: 17vw;
+  border: none;
+  border-radius: 7px;
+}
