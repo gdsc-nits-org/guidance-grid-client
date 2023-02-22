@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Footer, Navbar } from "./Components";
-import { Home, Error, Bookmark } from "./Pages";
+import { Home, Error, Bookmark, ArticlePage } from "./Pages";
 
 const App = () => {
   return (
@@ -9,6 +9,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bookmarks" element={<Bookmark />} />
+        <Route path="/posts" element={<ArticlePage />} />
         <Route path="*" element={<Error error="Error" />} />
       </Routes>
       <Footer />
