@@ -1,5 +1,5 @@
 import { useFetchData } from "../../Hooks";
-import { Author } from "../../Components";
+import { Author, Share } from "../../Components";
 import styles from "./ArticlePage.module.scss";
 
 const ArticlePage = () => {
@@ -20,6 +20,7 @@ const ArticlePage = () => {
           twitter={d.twitter}
         />
       ))}
+      <Share />
     </div>
   );
 };
