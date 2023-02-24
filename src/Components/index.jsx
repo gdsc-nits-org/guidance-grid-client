@@ -10,6 +10,7 @@ import SideBar from "./SideBar/SideBar";
 import BookmarkCard from "./BookmarkCard/BookmarkCard";
 import TopWriters from "./TopWriters/TopWriters";
 import SuggestedPosts from "./SuggestedPosts/SuggestedPosts";
+import Author from "./Author/Author";
 
 export {
   Button,
@@ -24,4 +25,5 @@ export {
   BookmarkCard,
   TopWriters,
   SuggestedPosts,
+  Author,
 };

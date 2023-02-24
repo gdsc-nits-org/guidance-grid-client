@@ -6,7 +6,7 @@ const SuggestedPosts = () => {
   const [postsRespState] = useFetchData("/articles/trending.json");
   return (
     <>
-      <h1>Suggested Posts</h1>
+      <h3 style={{ fontWeight: 600 }}>Suggested Posts</h3>
       {postsRespState.response.map((item, index) => (
         <Trending data={item} id={index} key={item?.id} />
       ))}
