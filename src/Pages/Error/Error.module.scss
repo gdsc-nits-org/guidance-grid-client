@@ -1,7 +1,31 @@
 .error {
-  min-height: 100vh;
+  height: 90vh;
   padding: 10vh 2vh;
-  h1 {
+  display: flex;
+  flex-direction: column;
+
+  .lottie{
+    margin: auto;
+    width: 600px;
+    height: 500px;
+  }
+
+  .errorMessage{
+    color: var(--gdsc-logo-text);
+    text-align: center;
     font-weight: bold;
   }
+
+    @media (100px <= width <=500px) {
+      .lottie {
+        margin: auto;
+        height: 100px;
+        width: 200px;
+      }
+
+      .errorMessage {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
 }
