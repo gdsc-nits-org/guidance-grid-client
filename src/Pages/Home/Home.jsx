@@ -1,7 +1,6 @@
 import { Icon } from "@iconify-icon/react";
 import { useFetchData } from "../../Hooks";
 import { ArticleCard, Loading, Trending, Searchbar, SideBar } from "../../Components";
-
 import style from "./Home.module.scss";
 
 const Home = () => {
@@ -27,7 +26,6 @@ const Home = () => {
             <ArticleCard data={item} id={index} key={item?.id} />
           ))}
         </div>
-
         <SideBar />
       </div>
     </main>
