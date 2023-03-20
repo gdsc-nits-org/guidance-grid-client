@@ -10,8 +10,11 @@ import SideBar from "./SideBar/SideBar";
 import BookmarkCard from "./BookmarkCard/BookmarkCard";
 import TopWriters from "./TopWriters/TopWriters";
 import SuggestedPosts from "./SuggestedPosts/SuggestedPosts";
+import Suggestions from "./SuggestedPosts/Suggestions";
 import Author from "./Author/Author";
 import Share from "./Share/Share";
+import CommentBox from "./Comments/CommentBox/CommentBox";
+import Reaction from "./Reaction/Reaction";
 
 export {
   Button,
@@ -25,7 +28,10 @@ export {
   SideBar,
   BookmarkCard,
   TopWriters,
+  Suggestions,
   SuggestedPosts,
   Author,
   Share,
+  CommentBox,
+  Reaction,
 };

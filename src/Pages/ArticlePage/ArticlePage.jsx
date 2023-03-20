@@ -1,12 +1,11 @@
 import { useFetchData } from "../../Hooks";
-import { Author, Share } from "../../Components";
+import { Author, Suggestions, Share, CommentBox, Reaction } from "../../Components";
 import styles from "./ArticlePage.module.scss";
 
 const ArticlePage = () => {
   const [authorDataResp] = useFetchData("/articles/author.json");
   return (
     <div className={styles.page}>
-      {/* <SuggestedPosts /> */}
       {authorDataResp.response.map((d, index) => (
         <Author
           key={index}
@@ -20,7 +19,11 @@ const ArticlePage = () => {
           twitter={d.twitter}
         />
       ))}
+      {/* <SuggestedPosts /> */}
+      <Suggestions />
       <Share />
+      <Reaction />
+      <CommentBox />
     </div>
   );
 };

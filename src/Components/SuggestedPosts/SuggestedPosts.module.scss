@@ -1,0 +1,36 @@
+.card {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0.5em 0.5em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "profile details cover"
+    "title title cover";
+  height: 10%;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  .details {
+    grid-area: details;
+  }
+  .title {
+    grid-area: title;
+    font-weight: bold;
+    text-align: justify;
+  }
+  .profile {
+    grid-area: profile;
+    border-radius: 50%;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+  }
+  .cover {
+    grid-area: cover;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 6rem;
+  }
+}

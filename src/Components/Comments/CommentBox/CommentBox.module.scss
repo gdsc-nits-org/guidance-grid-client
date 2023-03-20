@@ -1,0 +1,62 @@
+*:focus {
+  outline: none;
+}
+
+.card {
+  background-color: var(--gray-background-1-100);
+  height: 40dvh;
+  border: 1px solid var(--gray-border-1-40);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    margin: 1.5rem;
+    align-items: center;
+    .profile {
+      border-radius: 50%;
+      width: 2.5rem;
+      margin-right: 1rem;
+      display: inline-block;
+    }
+  }
+  input {
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    background: inherit;
+    // overflow: ;
+    align-items: flex-start;
+    height: inherit;
+    border: none;
+  }
+  input::placeholder {
+    // align-items: flex-start;
+    color: var(--grey-text-2-100);
+  }
+  .bottom {
+    display: flex;
+    margin: 1rem;
+    .format {
+      margin-top: 0.5rem;
+      margin-right: 61.5rem;
+    }
+    button {
+      cursor: pointer;
+      font-size: 1rem;
+      border: none;
+      // margin: 0.3rem;
+    }
+    .cancel {
+      background: inherit;
+      padding: 0rem 6rem 1rem 1rem;
+    }
+    .comment {
+      background-color: var(--gdsc-blue-3-100);
+      color: whitesmoke;
+      display: inline-block;
+      padding: 0.7rem;
+      border-radius: 9999px;
+      border: none;
+    }
+  }
+}
