@@ -43,10 +43,7 @@ const AuthProvider = ({ children }) => {
       body: JSON.stringify(payload),
     });
     const data = await response.json();
-    if (response.status === 200) {
-      return [true, data.msg];
-    }
-    return [false, data.msg];
+    return [response.status === 200, data.msg];
   };
 
   const handleLogin = async (payload) => {
@@ -66,15 +63,12 @@ const AuthProvider = ({ children }) => {
         type: authActions.LOGIN,
         payload: data.msg,
       });
-      return [true, data.msg];
     }
-    /* Will Fix with toastify. For the time being */
-    // eslint-disable-next-line no-alert
-    alert(`${data.msg}`);
-    return [false, data.msg];
+    return [response.status === 200, data.msg];
   };
 
   const handleLogout = () => {
+    // Need to setup logout in backend.
     localStorage.removeItem("user");
     dispatch({ type: authActions.LOGOUT });
   };
