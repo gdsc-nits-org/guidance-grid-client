@@ -13,7 +13,12 @@ const CreateArticle = () => {
         <div className={style.content}>
           <h1 className={style.contentHead}>Content</h1>
           <p>Write about your topic</p>
-          <textarea name="" id="" cols="125" rows="15"></textarea>
+          <textarea name="" id="" ></textarea>
+        </div>
+        <div className={style.ref}>
+          <h1 className={style.refHead}>Other website in reference.</h1>
+          <p>Reference on the topic.</p>
+          <input type={style.text} placeholder="Enter tags" />
         </div>
         <div className={style.tags}>
           <h1 className={style.tagHead}>Tags</h1>
@@ -25,7 +30,18 @@ const CreateArticle = () => {
         </div>
       </div>
       <div className={style.rightSec}>
+        <div className={style.rightImg}>
         <img src="https://res.cloudinary.com/dnvhl9pru/image/upload/v1677011852/Guidance%20Grid/Blogging-pana_1_ihgns9.png" alt="" />
+        </div>
+        <div className={style.instructions}>
+          <h2 className={style.instHead}>How to write articles?</h2>
+          <ol>
+            <li>What is ReactJS and how can it be used in development?</li>
+            <li>What is ReactJS and how can it be used in    development?</li>
+            <li>What is ReactJS and how can it be used in development?</li>
+            <li>What is ReactJS and how can it be used in development?</li>
+          </ol>
+        </div>
       </div>
     </section>
   );
