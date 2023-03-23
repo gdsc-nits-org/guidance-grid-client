@@ -11,10 +11,37 @@
   }
 
   .errorMessage{
+    margin-top: 3rem;
     color: var(--gdsc-logo-text);
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+  }
+
+  .btn{
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+
+  .homeButton{
+    display: block;
+    background-color: var(--gdsc-blue-3-100);
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 0.5rem;
+    max-width: 500px;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+    border-width: 1px;
+    cursor: pointer;
+  }
+
+  .homeButton:hover{
+    opacity: 0.8;
+    background-color: var(gdsc-neutral-1-100);
   }
 
     @media (100px <= width <=500px) {
@@ -27,6 +54,11 @@
       .errorMessage {
         font-weight: 500;
         font-size: 20px;
+      }
+
+      .homeButton{
+        padding: 0.5rem;
+        font-size: small;
       }
     }
 }
