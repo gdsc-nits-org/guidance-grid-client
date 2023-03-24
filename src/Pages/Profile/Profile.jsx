@@ -1,12 +1,15 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import { useState } from "react";
+import { Icon } from "@iconify-icon/react";
 import styles from "./Profile.module.scss";
-import { ArticleCard, Loading } from "../../Components";
+import { ArticleCard, Loading, ExpComp } from "../../Components";
 import { useFetchData } from "../../Hooks";
-// import { Icon } from "@iconify-icon/react";
-
 const ProfilePage = () => {
   const [articleRespState] = useFetchData("/articles/getarticles.json");
-  const [status, isFollow] = useState("Follow");
+  const [userRespState] = useFetchData("/articles/userProfile.json");
+  const userData = userRespState.response;
+
+  const [status, isFollow] = useState("FOLLOW");
   const [followStyle, setStyle] = useState();
 
   const followed = {
@@ -18,11 +21,11 @@ const ProfilePage = () => {
     backgroundColor: "white",
   };
   const followBool = () => {
-    if (status === "Follow") {
-      isFollow("Unfollow");
+    if (status === "FOLLOW") {
+      isFollow("UNFOLLOW");
       setStyle(followed);
     } else {
-      isFollow("Follow");
+      isFollow("FOLLOW");
       setStyle(unfollowed);
     }
   };
@@ -31,31 +34,39 @@ const ProfilePage = () => {
     <div className={styles.main}>
       <div className={styles.cover}>
         <div className={styles.coverPic}>
-          <img
-            src="https://c4.wallpaperflare.com/wallpaper/396/327/725/action-adventure-binary-code-wallpaper-preview.jpg"
-            alt="Your Cover Here"
-          />
+          <img src={userData.cover} alt="Your Cover Here" />
         </div>
 
         <div className={styles.profileInfo}>
           <div className={styles.profilePic}>
-            <img
-              src="https://cdn-pornstars.4tube.com/0/0/0/0/0/8/9/1/2/1463136980_276x226.jpg"
-              alt="Profile"
-            />
+            <img src={userData.display} alt="Profile" />
           </div>
 
           <div className={styles.profileData}>
-            <h2>Sandeep Kherkatary</h2>
+            <h2>{userData.name}</h2>
             <button style={followStyle} onClick={followBool}>
-              {" "}
               {status}
             </button>
-            <p>160 followers</p>
+            <p>{userData.followers} followers</p>
             <div className={styles.socials}>
-              <span>fb </span>
-              <span>insta </span>
-              <span>git </span>
+              <p>
+                {" "}
+                <a href={userData.fb}>
+                  <Icon icon="ri:facebook-fill" width="20" />
+                </a>{" "}
+              </p>
+              <p>
+                {" "}
+                <a href={userData.github}>
+                  <Icon icon="mdi:github" width="25" />
+                </a>{" "}
+              </p>
+              <p>
+                {" "}
+                <a href={userData.linkedin}>
+                  <Icon icon="mdi:linkedin" width="25" />
+                </a>{" "}
+              </p>
             </div>
           </div>
         </div>
@@ -64,10 +75,43 @@ const ProfilePage = () => {
       <div className={styles.cardAndSide}>
         <div className={styles.left}>
           <div className={styles.bio}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repudiandae,
-            quia ullam autem atque maxime porro blanditiis animi, aliquid saepe impedit
-            adipisci eaque quaerat temporibus magni perferendis deleniti consequuntur
-            fugiat.
+            (developer) has an excellent OOP, C# Language and the .NET framework
+            knowledge. Also JavaScript Language, HTML and CSS languages and great
+            understanding of HTTP and web applications lifecycle specifically single page
+            applications. Great experience with source control systems (Git), experience
+            with issue tracking systems: JIRA. Understanding unit testing concepts and
+            understanding of behavior driven tests and of continuous integration and
+            deployment processes.
+          </div>
+
+          {/* ........experience tab for phone size...... */}
+
+          <div className={styles.exprMobile}>
+            <h2>Experience</h2>
+            <ExpComp
+              head="NIT SILCHAR"
+              desig="UI/UX Member"
+              jMon="August"
+              jYear="2022"
+              EMon="Present"
+              EYear="2023"
+            />
+            <ExpComp
+              head="NEHU"
+              desig="ARCHITECTURE"
+              jMon="Monday"
+              jYear="2021"
+              EMon="JAnuary"
+              EYear="2022"
+            />
+            <ExpComp
+              head="Assam University"
+              desig="KERANI"
+              jMon="December"
+              jYear="2022"
+              EMon="June"
+              EYear="2023"
+            />
           </div>
 
           <h1 className={styles.recentHead}>Recent posts</h1>
@@ -80,10 +124,33 @@ const ProfilePage = () => {
             ))}
           </div>
         </div>
-
         <div className={styles.right}>
           <div className={styles.expr}>
             <h2>Experience</h2>
+            <ExpComp
+              head="NIT SILCHAR"
+              desig="UI/UX Member"
+              jMon="August"
+              jYear="2022"
+              EMon="Present"
+              EYear="2023"
+            />
+            <ExpComp
+              head="NEHU"
+              desig="ARCHITECTURE"
+              jMon="Monday"
+              jYear="2021"
+              EMon="JAnuary"
+              EYear="2022"
+            />
+            <ExpComp
+              head="Assam University"
+              desig="KERANI"
+              jMon="December"
+              jYear="2022"
+              EMon="June"
+              EYear="2023"
+            />
           </div>
         </div>
       </div>
