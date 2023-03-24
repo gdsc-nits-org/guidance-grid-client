@@ -74,15 +74,7 @@ const ProfilePage = () => {
 
       <div className={styles.cardAndSide}>
         <div className={styles.left}>
-          <div className={styles.bio}>
-            (developer) has an excellent OOP, C# Language and the .NET framework
-            knowledge. Also JavaScript Language, HTML and CSS languages and great
-            understanding of HTTP and web applications lifecycle specifically single page
-            applications. Great experience with source control systems (Git), experience
-            with issue tracking systems: JIRA. Understanding unit testing concepts and
-            understanding of behavior driven tests and of continuous integration and
-            deployment processes.
-          </div>
+          <div className={styles.bio}>{userData.bio}</div>
 
           {/* ........experience tab for phone size...... */}
 

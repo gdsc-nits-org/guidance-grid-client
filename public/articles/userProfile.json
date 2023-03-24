@@ -1,44 +1,42 @@
 {
-    "status":200,
-    "msg":
-        {
-            "id":"5786799",
-            "name":"Saurav Pal",
-            "followers":"500",
-            "display":"https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
-            "cover":"https://images.unsplash.com/photo-1560364897-91578ff41817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
-            "fb":"https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
-            "github":"https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
-            "linkedin":"https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
-            "bio":"(developer) has an excellent OOP, C# Language and the .NET framework knowledge. Also JavaScript Language, HTML and CSS languages and great understanding of HTTP and web applications lifecycle specifically single page applications. Great experience with source control systems (Git), experience with issue tracking systems: JIRA. Understanding unit testing concepts and understanding of behavior driven tests and of continuous integration and deployment processes.",
-            "exp":[
-                {
-                    "location":"NIT SILCHAR",
-                    "desig":"UI/UX member",
-                    "joinMon":"August",
-                    "joinYear":"2023",
-                    "endMon":"Present",
-                    "endYear":""
-                },
+  "status": 200,
+  "msg": {
+    "id": "5786799",
+    "name": "Saurav Pal",
+    "followers": "500",
+    "display": "https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
+    "cover": "https://images.unsplash.com/photo-1560364897-91578ff41817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    "fb": "https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
+    "github": "https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
+    "linkedin": "https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
+    "bio": "(developer) has an excellent OOP, C# Language and the .NET framework knowledge. Also JavaScript Language, HTML and CSS languages and great understanding of HTTP and web applications lifecycle specifically single page applications. Great experience with source control systems (Git), experience with issue tracking systems: JIRA. Understanding unit testing concepts and understanding of behavior driven tests and of continuous integration and deployment processes.",
+    "exp": [
+      {
+        "location": "NIT SILCHAR",
+        "desig": "UI/UX member",
+        "joinMon": "August",
+        "joinYear": "2023",
+        "endMon": "Present",
+        "endYear": ""
+      },
 
-                {
-                    "location":"NEHU",
-                    "desig":"Architecture",
-                    "joinMon":"August",
-                    "joinYear":"2023",
-                    "endMon":"Present",
-                    "endYear":""
-                },
+      {
+        "location": "NEHU",
+        "desig": "Architecture",
+        "joinMon": "August",
+        "joinYear": "2023",
+        "endMon": "Present",
+        "endYear": ""
+      },
 
-                {
-                    "location":"Assam University",
-                    "desig":"Kerani",
-                    "joinMon":"August",
-                    "joinYear":"2023",
-                    "endMon":"2050",
-                    "endYear":""
-                }
-            ]
-
-        }
+      {
+        "location": "Assam University",
+        "desig": "Kerani",
+        "joinMon": "August",
+        "joinYear": "2023",
+        "endMon": "2050",
+        "endYear": ""
+      }
+    ]
+  }
 }
