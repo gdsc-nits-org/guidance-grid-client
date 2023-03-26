@@ -32,7 +32,6 @@ const AuthProvider = ({ children }) => {
   const [authState, dispatch] = useReducer(authStateReducer, initialAuthState);
 
   const handleSignup = async (payload) => {
-    // console.log("Inside handle signup", payload)
     const response = await fetch(`${import.meta.env.VITE_GG_API_BASE_URI}/auth/signup`, {
       method: "POST",
       credentials: "include",
@@ -43,7 +42,7 @@ const AuthProvider = ({ children }) => {
       body: JSON.stringify(payload),
     });
     const data = await response.json();
-    return [response.status === 200, data.msg];
+    return data;
   };
 
   const handleLogin = async (payload) => {
@@ -64,13 +63,17 @@ const AuthProvider = ({ children }) => {
         payload: data.msg,
       });
     }
-    return [response.status === 200, data.msg];
+    return data;
   };
 
-  const handleLogout = () => {
-    // Need to setup logout in backend.
+  const handleLogout = async () => {
+    const response = await fetch(`${import.meta.env.VITE_GG_API_BASE_URI}/auth/logout`, {
+      credentials: "include",
+    });
+    const data = await response.json();
     localStorage.removeItem("user");
     dispatch({ type: authActions.LOGOUT });
+    return data;
   };
 
   const authctxMemo = useMemo(() => {
