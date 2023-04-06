@@ -1,0 +1,81 @@
+{
+    "status": 200,
+    "msg": [
+      {
+        "id" : 1,
+        "name": "Saurav Paul",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Project lead",
+        "github" : "https://github.com/username/",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "facebook" : "https://www.facebook.com/name/"
+      },
+      {
+        "id" : 1,
+        "name": "Pratik Mazumdar",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Project lead",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "github" : "https://github.com/username/",
+        "facebook" : "https://www.facebook.com/name/"
+      },
+      {
+        "id" : 1,
+        "name": "Shibam Debnath",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Project lead",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "github" : "https://github.com/username/",
+        "facebook" : "https://www.facebook.com/name/"
+      },
+      {
+        "id" : 1,
+        "name": "Shibam Debnath",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Web member",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "github" : "https://github.com/username/",
+        "facebook" : "https://www.facebook.com/name/"
+      },
+      {
+        "id" : 1,
+        "name": "Shibam Debnath",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Web member",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "github" : "https://github.com/username/",
+        "facebook" : "https://www.facebook.com/name/"
+      }
+      ,
+      {
+        "id" : 1,
+        "name": "Shibam Debnath",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Web member",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "github" : "https://github.com/username/",
+        "facebook" : "https://www.facebook.com/name/"
+      }
+      ,
+      {
+        "id" : 1,
+        "name": "Shibam Debnath",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Web member",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "github" : "https://github.com/username/",
+        "facebook" : "https://www.facebook.com/name/"
+      }
+      ,
+      {
+        "id" : 1,
+        "name": "Shibam Debnath",
+        "imageSource": "/images/profile-1.png",
+        "designation" : "Web member",
+        "linkedin" : "https://www.linkedin.com/in/name/",
+        "github" : "https://github.com/username/",
+        "facebook" : "https://www.facebook.com/name/"
+      }
+    ]
+  }
+  

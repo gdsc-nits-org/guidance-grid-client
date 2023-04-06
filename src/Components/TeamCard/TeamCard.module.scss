@@ -1,0 +1,36 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  min-height: 18.5rem;
+  min-width: 20rem;
+  margin: 1rem 0;
+  align-items: center;
+  background-color: var(--sponsorcard-bg-1-100);
+  border-radius: 1rem;
+  box-shadow: 0.15rem 0.15rem 0.75rem rgba(0, 0, 0, 0.1);
+
+
+    .image{
+        min-width: 10rem;
+        min-height: 10rem;
+    }
+
+    .name {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--gdsc-grayish-1-100);
+        font-weight: 600;
+      }
+
+      .socials{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        .socialIcon{
+            padding: 0.3rem;
+        }
+      }
+    }
