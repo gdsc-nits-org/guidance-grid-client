@@ -8,25 +8,15 @@ const ProfilePage = () => {
   const [articleRespState] = useFetchData("/articles/getarticles.json");
   const [userRespState] = useFetchData("/articles/userProfile.json");
   const userData = userRespState.response;
-
-  const [status, isFollow] = useState("FOLLOW");
-  const [followStyle, setStyle] = useState();
-
-  const followed = {
-    color: "white",
-    backgroundColor: "#008DE9",
-  };
-  const unfollowed = {
-    color: "#008DE9",
-    backgroundColor: "white",
-  };
-  const followBool = () => {
-    if (status === "FOLLOW") {
-      isFollow("UNFOLLOW");
-      setStyle(followed);
+  const [Follow, isFollow] = useState(0);
+  const [status, changeStatus] = useState("Follow");
+  const follow = () => {
+    if (Follow === 0) {
+      isFollow(1);
+      changeStatus("Followed");
     } else {
-      isFollow("FOLLOW");
-      setStyle(unfollowed);
+      isFollow(0);
+      changeStatus("Follow");
     }
   };
 
@@ -44,7 +34,7 @@ const ProfilePage = () => {
 
           <div className={styles.profileData}>
             <h2>{userData.name}</h2>
-            <button style={followStyle} onClick={followBool}>
+            <button id={Follow === 0 ? styles.follow : styles.unfollow} onClick={follow}>
               {status}
             </button>
             <p>{userData.followers} followers</p>

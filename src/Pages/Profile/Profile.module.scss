@@ -1,5 +1,5 @@
 .main {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 
   @media screen and (max-width: 1000px) {
     margin-top: 0;
@@ -39,7 +39,7 @@
       margin: auto;
       width: 18%;
       border-radius: 50%;
-      border: 5px solid white;
+      border: 0.313rem solid white;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -80,9 +80,9 @@
 
         width: fit-content;
         background-color: white;
-        border: 1px solid #008de9;
+        border: 0.063rem solid #008de9;
         color: #008de9;
-        border-radius: 7px;
+        border-radius: 0.438rem;
 
         &:hover {
           background-color: #008de9;
@@ -114,12 +114,12 @@
           margin: 0 0.5rem;
           width: 2rem;
           height: 2rem;
-          border: 2px solid #d6cece;
+          border: 0.125rem solid #d6cece;
           border-radius: 50%;
 
           &:hover {
             background-color: #fafafa;
-            border: 2px solid #c3bebe;
+            border: 0.125rem solid #c3bebe;
           }
         }
       }
@@ -133,14 +133,14 @@
 
   .bio {
     margin: 5% 8%;
-    margin-top: 15rem;
+    margin-top: 18rem;
     min-height: 10rem;
     font-size: 0.2 rem;
     font-family: poppins;
     color: #505050;
     text-align: justify;
-    border: 1px solid rgba(160, 160, 160, 0.55);
-    border-radius: 20px;
+    border: 0.063rem solid rgba(160, 160, 160, 0.55);
+    border-radius: 1.25rem;
     padding: 2%;
   }
 
@@ -189,9 +189,19 @@
 
     .bio {
       font-size: 0.8rem;
-      margin-top: 13rem;
+      margin-top: 15rem;
     }
 
     display: block;
   }
+}
+
+.follow {
+  color: "white";
+  background-color: "#008DE9";
+}
+
+.unfollow {
+  color: "#008DE9";
+  background-color: "white";
 }
