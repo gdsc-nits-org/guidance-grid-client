@@ -1,14 +1,31 @@
 .page{
-    padding: 8rem 2rem;
-    .heading{
-        margin-top: 1rem;
-        font-size: 2.5rem;
+    padding: 6rem 3rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem;
+    }
+
+
+    .aboutSection{
+        padding: 0% 5%;
+    }
+
+    .heading{   
+        
+        margin-top: 1.5rem;
+        font-size: 3rem;
         color: var(--gdsc-blue-3-100);
         font-weight: var(--heading-1-text-weight);
+        text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
     }
     .about{
         .text{
-            margin-top: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
         }
     }
 
@@ -16,8 +33,12 @@
         
         width: 100%;
         text-align: center;
+
+        .heading{
+            text-align: center;
+        }
         .senior{
-            padding: 5% 5%;
+            padding: 1% 5%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -25,7 +46,7 @@
         }
 
         .junior{
-            padding: 5% 5%;
+            padding: 3% 0%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

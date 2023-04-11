@@ -3,79 +3,100 @@
     "msg": [
       {
         "id" : 1,
-        "name": "Saurav Paul",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Project lead",
-        "github" : "https://github.com/username/",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "facebook" : "https://www.facebook.com/name/"
-      },
-      {
-        "id" : 1,
         "name": "Pratik Mazumdar",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Project lead",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "github" : "https://github.com/username/",
-        "facebook" : "https://www.facebook.com/name/"
+        "imageSource": "/images/pratik.png",
+        "designation" : "Project Mentor",
+        "linkedin" : "https://www.linkedin.com/in/codadept",
+        "github" : "https://github.com/codadept",
+        "facebook" : "https://www.facebook.com/itspratikmaj"
       },
       {
-        "id" : 1,
-        "name": "Shibam Debnath",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Project lead",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "github" : "https://github.com/username/",
-        "facebook" : "https://www.facebook.com/name/"
+        "id" : 2,
+        "name": "Saurav Paul",
+        "imageSource": "/images/SAURAV.png",
+        "designation" : "Project Mentor",
+        "github" : "https://github.com/resyfer",
+        "linkedin" : "https://www.linkedin.com/in/resyfer/",
+        "facebook" : "https://www.facebook.com/resyfer.dev"
       },
       {
-        "id" : 1,
+        "id" : 3,
         "name": "Shibam Debnath",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Web member",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "github" : "https://github.com/username/",
-        "facebook" : "https://www.facebook.com/name/"
+        "imageSource": "/images/shibam.png",
+        "designation" : "Project Mentor",
+        "linkedin" : "https://www.linkedin.com/in/shibam-debnath-25b235206/",
+        "github" : "https://github.com/shibam-debnath",
+        "facebook" : "https://www.facebook.com/ind.iconic/"
       },
       {
-        "id" : 1,
-        "name": "Shibam Debnath",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Web member",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "github" : "https://github.com/username/",
-        "facebook" : "https://www.facebook.com/name/"
+        "id" : 4,
+        "name": "Sandeep Kherkatary",
+        "imageSource": "/images/sandeep.png",
+        "designation" : "Developer",
+        "linkedin" : "https://www.linkedin.com/in/sandeep-kherkatary-36018223a",
+        "github" : "https://github.com/kherkatary",
+        "facebook" : "https://www.facebook.com/kherkatarySan"
+      },
+      {
+        "id" : 5,
+        "name": "Adhiraj Dutta",
+        "imageSource": "/images/adhiraj.png",
+        "designation" : "Developer",
+        "linkedin" : "https://www.linkedin.com/in/adhirajdutta",
+        "github" : "https://github.com/byt3h3ad",
+        "facebook" : "https://www.facebook.com/byte.head.12?mibextid=ZbWKwL"
       }
       ,
       {
-        "id" : 1,
-        "name": "Shibam Debnath",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Web member",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "github" : "https://github.com/username/",
-        "facebook" : "https://www.facebook.com/name/"
+        "id" : 6,
+        "name": "Jaydeep Das",
+        "imageSource": "/images/jaydeep.png",
+        "designation" : "Developer",
+        "linkedin" : "https://www.linkedin.com/in/jaydeep-das-021625206/",
+        "github" : "https://github.com/JDeepD",
+        "facebook" : "https://www.facebook.com/profile.php?id=100076497327860"
       }
       ,
       {
-        "id" : 1,
-        "name": "Shibam Debnath",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Web member",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "github" : "https://github.com/username/",
-        "facebook" : "https://www.facebook.com/name/"
+        "id" : 7,
+        "name": "Bipangshu Saha",
+        "imageSource": "/images/BIPANGSHU.png",
+        "designation" : "Developer",
+        "linkedin" : "https://www.linkedin.com/in/bipangshu-saha-2aab9b228/",
+        "github" : "https://github.com/BIPS8812",
+        "facebook" : "https://www.facebook.com/ronny.kumar.7186896"
       }
       ,
       {
-        "id" : 1,
-        "name": "Shibam Debnath",
-        "imageSource": "/images/profile-1.png",
-        "designation" : "Web member",
-        "linkedin" : "https://www.linkedin.com/in/name/",
-        "github" : "https://github.com/username/",
-        "facebook" : "https://www.facebook.com/name/"
+        "id" : 8,
+        "name": "Aditya Kumar",
+        "imageSource": "/images/aditya.png",
+        "designation" : "Developer",
+        "linkedin" : "https://www.linkedin.com/in/adityakr31",
+        "github" : "https://github.com/31adityakumar",
+        "facebook" : "https://www.facebook.com/profile.php?id=100071791456601&mibextid=ZbWKwL"
       }
+      ,
+      {
+        "id" : 9,
+        "name": "Aryadeep Gogoi",
+        "imageSource": "/images/aryadeep.png",
+        "designation" : "UI/UX Designer",
+        "linkedin" : "https://www.linkedin.com/in/aryadeep-gogoi-696609236/",
+        "github" : "https://github.com/Arya-Deep-31",
+        "facebook" : "https://www.facebook.com/profile.php?id=100076109862434"
+      }
+      ,
+      {
+        "id" : 10,
+        "name": "Jacinth Mahanta",
+        "imageSource": "/images/jacinth.png",
+        "designation" : "UI/UX Designer",
+        "linkedin" : "https://www.linkedin.com/in/jacinth-mahanta-63b279229/",
+        "github" : "https://github.com/Jacinth-Mahanta",
+        "facebook" : "https://www.facebook.com/jacinth.mahanta"
+      }
+      
     ]
   }
   

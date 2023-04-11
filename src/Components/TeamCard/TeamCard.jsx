@@ -8,19 +8,20 @@ const TeamCard = ({ data }) => {
         <img className={styles.image} src={data.imageSource} alt="" />
       </div>
       <div className={styles.name}>{data.name}</div>
+      <div className={styles.designation}>{data.designation}</div>
       <div className={styles.socials}>
         <p>
-          <a href={data.github}>
+          <a className={styles.icon} href={data.github}>
             <Icon icon="mdi:github" width="25" />
           </a>
         </p>
         <p>
-          <a href={data.linkedin}>
+          <a className={styles.icon} href={data.linkedin}>
             <Icon icon="mdi:linkedin" width="25" />
           </a>
         </p>
         <p>
-          <a href={data.facebook}>
+          <a className={styles.icon} href={data.facebook}>
             <Icon icon="ri:facebook-fill" width="20" />
           </a>
         </p>
