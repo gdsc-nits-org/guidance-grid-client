@@ -1,5 +1,12 @@
 import { useFetchData } from "../../Hooks";
-import { Author, Suggestions, Share, CommentBox, Reaction } from "../../Components";
+import {
+  Author,
+  Suggestions,
+  Share,
+  CommentBox,
+  Reaction,
+  Comment,
+} from "../../Components";
 import styles from "./ArticlePage.module.scss";
 
 const ArticlePage = () => {
@@ -24,6 +31,7 @@ const ArticlePage = () => {
       <Share />
       <Reaction />
       <CommentBox />
+      <Comment />
     </div>
   );
 };

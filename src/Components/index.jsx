@@ -15,6 +15,7 @@ import Author from "./Author/Author";
 import Share from "./Share/Share";
 import CommentBox from "./Comments/CommentBox/CommentBox";
 import Reaction from "./Reaction/Reaction";
+import Comment from "./Comments/Comments/Comment";
 
 export {
   Button,
@@ -34,4 +35,5 @@ export {
   Share,
   CommentBox,
   Reaction,
+  Comment,
 };

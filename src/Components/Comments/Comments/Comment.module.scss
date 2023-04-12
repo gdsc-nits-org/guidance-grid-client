@@ -1,0 +1,35 @@
+.wrapper {
+  display: grid;
+  height: fit-content;
+  width: 60dvw;
+  width: 60vw;
+  margin: 3rem;
+  .header {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    .profile {
+      border-radius: 50%;
+      width: 2rem;
+      margin-right: 1rem;
+      display: inline-block;
+    }
+    .author {
+      font-weight: var(--heading-2-text-weight);
+      color: var(--grey-text-1-100);
+    }
+    .reply {
+      margin-left: auto;
+      border-radius: 0.7rem;
+      padding: 0.3rem 1rem;
+      color: var(--grey-text-3-100);
+      font-weight: var(--heading-1-text-weight);
+      background-color: var(--gdsc-bg-1-100);
+      border: 1px solid var(--gdsc-shadow-1-100);
+    }
+  }
+  .content {
+    color: #505050;
+    font-weight: var(--paragraph-1-text-weight);
+  }
+}
