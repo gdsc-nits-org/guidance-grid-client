@@ -1,26 +1,26 @@
 {
-    "status": 200,
-    "msg": [
-        {
-            "id": 1,
-            "photo": "https://picsum.photos/100",
-            "profile": "/user/666",
-            "name": "Lorem ipsum",
-            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi repellat dolor beatae magnam cupiditate? Ea fugit dolores aspernatur voluptates voluptate non voluptatibus odio ratione! Magni quos voluptates ex harum!"
-        },
-        {
-            "id": 2,
-            "photo": "https://picsum.photos/100",
-            "profile": "/user/666",
-            "name": "Lorem ipsum",
-            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi repellat dolor beatae magnam cupiditate? Ea fugit dolores aspernatur voluptates voluptate non voluptatibus odio ratione! Magni quos voluptates ex harum!"
-        },
-        {
-            "id": 3,
-            "photo": "https://picsum.photos/100",
-            "profile": "/user/666",
-            "name": "Lorem ipsum",
-            "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi repellat dolor beatae magnam cupiditate? Ea fugit dolores aspernatur voluptates voluptate non voluptatibus odio ratione! Magni quos voluptates ex harum!"
-        }
-    ]
+  "status": 200,
+  "msg": [
+    {
+      "id": 1,
+      "photo": "https://picsum.photos/100",
+      "profile": "/user/666",
+      "name": "Lorem ipsum",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi repellat dolor beatae magnam cupiditate? Ea fugit dolores aspernatur voluptates voluptate non voluptatibus odio ratione! Magni quos voluptates ex harum!"
+    },
+    {
+      "id": 2,
+      "photo": "https://picsum.photos/100",
+      "profile": "/user/666",
+      "name": "Lorem ipsum",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi repellat dolor beatae magnam cupiditate? Ea fugit dolores aspernatur voluptates voluptate non voluptatibus odio ratione! Magni quos voluptates ex harum!"
+    },
+    {
+      "id": 3,
+      "photo": "https://picsum.photos/100",
+      "profile": "/user/666",
+      "name": "Lorem ipsum",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi repellat dolor beatae magnam cupiditate? Ea fugit dolores aspernatur voluptates voluptate non voluptatibus odio ratione! Magni quos voluptates ex harum!"
+    }
+  ]
 }
