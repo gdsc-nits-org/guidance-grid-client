@@ -5,7 +5,7 @@ import {
   Share,
   CommentBox,
   Reaction,
-  Comment,
+  Comments,
 } from "../../Components";
 import styles from "./ArticlePage.module.scss";
 
@@ -31,7 +31,7 @@ const ArticlePage = () => {
       <Share />
       <Reaction />
       <CommentBox />
-      <Comment />
+      <Comments />
     </div>
   );
 };

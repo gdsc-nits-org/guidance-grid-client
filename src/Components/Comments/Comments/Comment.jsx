@@ -1,20 +1,19 @@
+import { Link } from "react-router-dom";
 import styles from "./Comment.module.scss";
 
-const Comment = () => {
+const Comment = ({ data }) => {
   return (
     <section className={styles.wrapper}>
       <div className={styles.header}>
-        <img src="https://picsum.photos/200" className={styles.profile} alt="author" />
-        <p className={styles.author}>author</p>
+        <img src={data?.photo} className={styles.profile} alt="author" />
+        <p className={styles.author}>
+          <Link to={data?.profile}>{data?.name}</Link>
+        </p>
         <button type="button" className={styles.reply} aria-label="reply">
           Reply
         </button>
       </div>
-      <div className={styles.content}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi
-        repellat dolor beatae magnam cupiditate? Ea fugit dolores aspernatur voluptates
-        voluptate non voluptatibus odio ratione! Magni quos voluptates ex harum!
-      </div>
+      <div className={styles.content}>{data?.content}</div>
     </section>
   );
 };
