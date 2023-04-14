@@ -26,7 +26,6 @@ const ArticlePage = () => {
           twitter={d.twitter}
         />
       ))}
-      {/* <SuggestedPosts /> */}
       <Suggestions />
       <Share />
       <Reaction />
