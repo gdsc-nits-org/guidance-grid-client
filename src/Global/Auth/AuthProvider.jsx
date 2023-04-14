@@ -3,12 +3,8 @@ import AuthContext from "./authContext";
 import * as authActions from "./authActions";
 
 const initialAuthState = {
-  user: {
-    uid: null,
-    name: null,
-    username: null,
-  },
-  isLoggedIn: false,
+  user: localStorage.getItem("user"),
+  isLoggedIn: !!localStorage.getItem("user"),
 };
 
 const authStateReducer = (state, action) => {
@@ -35,16 +31,49 @@ const authStateReducer = (state, action) => {
 const AuthProvider = ({ children }) => {
   const [authState, dispatch] = useReducer(authStateReducer, initialAuthState);
 
-  const handleLogin = () => {
-    dispatch({
-      type: authActions.LOGIN,
-      /* Dummy payload */
-      payload: { uid: 777, name: "Jaydeep", username: "JDeep" },
+  const handleSignup = async (payload) => {
+    const response = await fetch(`${import.meta.env.VITE_GG_API_BASE_URI}/auth/signup`, {
+      method: "POST",
+      credentials: "include",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
     });
+    const data = await response.json();
+    return data;
   };
 
-  const handleLogout = () => {
+  const handleLogin = async (payload) => {
+    const response = await fetch(`${import.meta.env.VITE_GG_API_BASE_URI}/auth/login`, {
+      method: "POST",
+      credentials: "include",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+    const data = await response.json();
+    if (response.status === 200) {
+      localStorage.setItem("user", JSON.stringify(data.msg));
+      dispatch({
+        type: authActions.LOGIN,
+        payload: data.msg,
+      });
+    }
+    return data;
+  };
+
+  const handleLogout = async () => {
+    const response = await fetch(`${import.meta.env.VITE_GG_API_BASE_URI}/auth/logout`, {
+      credentials: "include",
+    });
+    const data = await response.json();
+    localStorage.removeItem("user");
     dispatch({ type: authActions.LOGOUT });
+    return data;
   };
 
   const authctxMemo = useMemo(() => {
@@ -53,6 +82,7 @@ const AuthProvider = ({ children }) => {
       isLoggedIn: authState.isLoggedIn,
       login: handleLogin,
       logout: handleLogout,
+      signup: handleSignup,
     };
   }, [authState]);
 

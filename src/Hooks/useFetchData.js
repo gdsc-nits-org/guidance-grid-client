@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 
 const fetchData = async (setState, url) => {
   try {
-    const resp = await fetch(url);
+    const resp = await fetch(url, {
+      credentials: "include",
+    });
     const jresp = await resp.json();
     setState((prevState) => {
       return {
