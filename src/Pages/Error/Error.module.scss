@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
 
-  .lottie{
+  .lottie {
     margin: auto;
     width: 600px;
     height: 500px;
   }
 
-  .errorMessage{
+  .errorMessage {
     margin-top: 3rem;
     color: var(--gdsc-logo-text);
     text-align: center;
@@ -18,12 +18,12 @@
     font-size: 25px;
   }
 
-  .btn{
+  .btn {
     margin-top: 1.5rem;
     padding: 1rem;
   }
 
-  .homeButton{
+  .homeButton {
     display: block;
     background-color: var(--gdsc-blue-3-100);
     color: white;
@@ -39,26 +39,26 @@
     cursor: pointer;
   }
 
-  .homeButton:hover{
+  .homeButton:hover {
     opacity: 0.8;
     background-color: var(gdsc-neutral-1-100);
   }
 
-    @media (100px <= width <=500px) {
-      .lottie {
-        margin: auto;
-        height: 100px;
-        width: 200px;
-      }
-
-      .errorMessage {
-        font-weight: 500;
-        font-size: 20px;
-      }
-
-      .homeButton{
-        padding: 0.5rem;
-        font-size: small;
-      }
+  @media (100px <= width <=500px) {
+    .lottie {
+      margin: auto;
+      height: 100px;
+      width: 200px;
     }
+
+    .errorMessage {
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .homeButton {
+      padding: 0.5rem;
+      font-size: small;
+    }
+  }
 }

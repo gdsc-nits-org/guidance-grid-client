@@ -10,7 +10,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/bookmarks" element={<Bookmark />} />
         <Route path="/posts" element={<ArticlePage />} />
-        <Route path="*" element={<Error error="Looks Like You Are Out Of Grids"/>} />
+        <Route path="*" element={<Error error="Looks Like You Are Out Of Grids" />} />
       </Routes>
       <Footer />
     </>
