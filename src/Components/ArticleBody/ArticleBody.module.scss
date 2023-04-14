@@ -1,0 +1,19 @@
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  gap: 1em;
+  color: rgba(78, 74, 74, 1);
+  header {
+    font-size: 2.24em;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+  section {
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+  figure {
+    align-self: center;
+  }
+}

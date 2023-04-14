@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 import styles from "./Comment.module.scss";
 
 const Comment = ({ data }) => {
+  const text = data?.content;
   return (
     <section className={styles.wrapper}>
       <div className={styles.header}>
@@ -13,7 +15,9 @@ const Comment = ({ data }) => {
           Reply
         </button>
       </div>
-      <div className={styles.content}>{data?.content}</div>
+      <div className={styles.content}>
+        <ReactMarkdown>{text}</ReactMarkdown>
+      </div>
     </section>
   );
 };
