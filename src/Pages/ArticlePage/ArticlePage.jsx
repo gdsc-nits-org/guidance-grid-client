@@ -29,12 +29,16 @@ const ArticlePage = () => {
           twitter={d.twitter}
         />
       ))}
-      {articleDataResp.response.map((item, index) => (
-        <ArticleBody data={item} id={index} key={item?.id} />
+      {articleDataResp.response.map((item) => (
+        <>
+          <div className={styles.reactions}>
+            <Reaction data={item.metadata} key={item.title} />
+          </div>
+          <ArticleBody data={item} key={item.id} />
+        </>
       ))}
       <Suggestions />
       <Share />
-      <Reaction />
       <CommentBox />
       <Comments />
     </div>

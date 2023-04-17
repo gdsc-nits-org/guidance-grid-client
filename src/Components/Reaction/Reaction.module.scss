@@ -1,21 +1,27 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: rgba(125, 125, 125, 1);
+}
+
 .wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   button:not(:last-child) {
     background-color: var(--gray-background-1-100);
-    // color: white;
-    // border: none;
-    // padding: 0.5rem;
-    // font-size: 2.5rem;
     height: 2rem;
     width: 2rem;
-    /*   box-shadow: 0 2px 4px darkslategray; */
     cursor: pointer;
     border-radius: 50%;
-    margin: 0;
+    // margin: 0;
   }
   :last-child {
     border: none;
-    padding: 5px;
+    padding: 0.3rem;
     background: none;
+    cursor: pointer;
   }
 }
