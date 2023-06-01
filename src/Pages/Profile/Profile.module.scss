@@ -13,6 +13,21 @@
   width: 100%;
   aspect-ratio: 1440/300;
 
+  .editProfile {
+    z-index: 1000;
+    position: absolute;
+    padding: 0.5rem;
+    margin: 0.5%;
+    bottom: 0;
+    border-radius: 0.32rem;
+    color: white;
+    background-color: rgba(217, 217, 217, 0.3);
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(170, 170, 170, 0.3);
+    }
+  }
+
   .coverPic {
     object-fit: cover;
     display: flex;
@@ -159,6 +174,7 @@
         display: block;
       }
     }
+
     .recentHead {
       width: fit-content;
       margin: 0 8%;
@@ -172,7 +188,18 @@
     }
   }
 
+  #expIconColor {
+    color: black;
+    padding: 0 1rem;
+    &:hover {
+      cursor: pointer;
+      color: rgb(69, 69, 69);
+    }
+  }
+
   .right {
+    position: relative;
+    z-index: 100;
     .expr {
       margin: 10rem 2%;
 
@@ -205,3 +232,5 @@
   color: "#008DE9";
   background-color: "white";
 }
+
+// ............................................ADD EXPERIENCE FORM GRID SECTION.....................................

@@ -13,6 +13,8 @@ import SuggestedPosts from "./SuggestedPosts/SuggestedPosts";
 import Author from "./Author/Author";
 import Share from "./Share/Share";
 import ExpComp from "./ExprienceBox/Exp";
+import EditProfile from "./EditProfileForm/EditProfileFrom";
+import EditExperience from "./EditExpForm/EditExpForm";
 
 export {
   Button,
@@ -30,4 +32,6 @@ export {
   Author,
   Share,
   ExpComp,
+  EditProfile,
+  EditExperience,
 };

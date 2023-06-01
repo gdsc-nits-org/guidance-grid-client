@@ -2,7 +2,13 @@
 import { useState } from "react";
 import { Icon } from "@iconify-icon/react";
 import styles from "./Profile.module.scss";
-import { ArticleCard, Loading, ExpComp } from "../../Components";
+import {
+  ArticleCard,
+  Loading,
+  ExpComp,
+  EditProfile,
+  EditExperience,
+} from "../../Components";
 import { useFetchData } from "../../Hooks";
 const ProfilePage = () => {
   const [articleRespState] = useFetchData("/articles/getarticles.json");
@@ -10,6 +16,7 @@ const ProfilePage = () => {
   const userData = userRespState.response;
   const [Follow, isFollow] = useState(0);
   const [status, changeStatus] = useState("Follow");
+
   const follow = () => {
     if (Follow === 0) {
       isFollow(1);
@@ -22,10 +29,16 @@ const ProfilePage = () => {
 
   return (
     <div className={styles.main}>
+      {/* .............. cover section........................................... */}
       <div className={styles.cover}>
+        <div className={styles.editProfile}>
+          <Icon icon="material-symbols:settings" color="white" width="20" />
+        </div>
         <div className={styles.coverPic}>
           <img src={userData.cover} alt="Your Cover Here" />
         </div>
+
+        {/* .............. Profile Info............................................ */}
 
         <div className={styles.profileInfo}>
           <div className={styles.profilePic}>
@@ -38,6 +51,8 @@ const ProfilePage = () => {
               {status}
             </button>
             <p>{userData.followers} followers</p>
+
+            {/* .............. Socilas......................................... */}
             <div className={styles.socials}>
               <p>
                 {" "}
@@ -66,10 +81,19 @@ const ProfilePage = () => {
         <div className={styles.left}>
           <div className={styles.bio}>{userData.bio}</div>
 
-          {/* ........experience tab for phone size...... */}
+          {/* ........experience tab for phone size.............................. */}
 
           <div className={styles.exprMobile}>
-            <h2>Experience</h2>
+            <h2>
+              Experience
+              <span id={styles.expIconColor}>
+                <Icon
+                  icon="material-symbols:add-circle-outline"
+                  color="black"
+                  width="15"
+                />
+              </span>
+            </h2>
             <ExpComp
               head="NIT SILCHAR"
               desig="UI/UX Member"
@@ -96,6 +120,7 @@ const ProfilePage = () => {
             />
           </div>
 
+          {/* ........Recent Posts............................................. */}
           <h1 className={styles.recentHead}>Recent posts</h1>
 
           <div className={styles.article}>
@@ -108,7 +133,19 @@ const ProfilePage = () => {
         </div>
         <div className={styles.right}>
           <div className={styles.expr}>
-            <h2>Experience</h2>
+            {/* ........experience tab for Desktop................................. */}
+
+            <h2>
+              Experience
+              <span id={styles.expIconColor}>
+                <Icon
+                  icon="material-symbols:add-circle-outline"
+                  color="black"
+                  width="15"
+                />
+              </span>
+            </h2>
+
             <ExpComp
               head="NIT SILCHAR"
               desig="UI/UX Member"
@@ -136,6 +173,11 @@ const ProfilePage = () => {
           </div>
         </div>
       </div>
+
+      {/* ....................... EDIT FORMS .................................................... */}
+
+      <EditProfile />
+      <EditExperience />
     </div>
   );
 };
