@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  color: var(--gdsc-grayish-1-100);
+  place-items: center;
+  img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    // margin-bottom: 1rem;
+  }
+  .name {
+    font-size: 1rem;
+    font-weight: var(--heading-1-text-weight);
+  }
+  .tag {
+    font-size: 0.7rem;
+    font-weight: var(--paragraph-1-text-weight);
+    margin-bottom: 0.7rem;
+  }
+  Icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
