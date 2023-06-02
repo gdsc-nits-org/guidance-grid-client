@@ -1,6 +1,18 @@
+import React, { useState, useRef} from "react";
+import JoditEditor from "jodit-react";
 import style from "./CreateArticle.module.scss";
 
 const CreateArticle = () => {
+  const editor = useRef(null);
+  const [content, setContent] = useState("");
+  // const config = useMemo(
+  //   {
+  //     readonly: false, // all options from https://xdsoft.net/jodit/docs/,
+  //     placeholder: placeholder || "Start typings...",
+  //   },
+  //   [placeholder]
+  // );
+
   return (
     <section className={style.createArticle}>
       <div className={style.leftSec}>
@@ -13,7 +25,15 @@ const CreateArticle = () => {
         <div className={style.content}>
           <h1 className={style.contentHead}>Content</h1>
           <p>Write about your topic</p>
-          <textarea name="" id="" ></textarea>
+          {/* <textarea name="" id="" ></textarea> */}
+          <JoditEditor
+            ref={editor}
+            value={content}
+            // config={config}
+            tabIndex={-0.5} // tabIndex of textarea
+            onBlur={newContent => setContent(newContent)}
+            onChange={(newContent) => setContent(newContent)}
+          />
         </div>
         <div className={style.ref}>
           <h1 className={style.refHead}>Other website in reference.</h1>
@@ -26,18 +46,21 @@ const CreateArticle = () => {
           <input type={style.text} placeholder="Enter tags" />
         </div>
         <div className={style.submit}>
-            <button className={style.btn}>POST ARTICLE</button>
+          <button className={style.btn}>POST ARTICLE</button>
         </div>
       </div>
       <div className={style.rightSec}>
         <div className={style.rightImg}>
-        <img src="https://res.cloudinary.com/dnvhl9pru/image/upload/v1677011852/Guidance%20Grid/Blogging-pana_1_ihgns9.png" alt="" />
+          <img
+            src="https://res.cloudinary.com/dnvhl9pru/image/upload/v1677011852/Guidance%20Grid/Blogging-pana_1_ihgns9.png"
+            alt=""
+          />
         </div>
         <div className={style.instructions}>
           <h2 className={style.instHead}>How to write articles?</h2>
           <ol>
             <li>What is ReactJS and how can it be used in development?</li>
-            <li>What is ReactJS and how can it be used in    development?</li>
+            <li>What is ReactJS and how can it be used in development?</li>
             <li>What is ReactJS and how can it be used in development?</li>
             <li>What is ReactJS and how can it be used in development?</li>
           </ol>
