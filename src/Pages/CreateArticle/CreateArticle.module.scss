@@ -5,18 +5,22 @@
   justify-content: center;
   min-height: 100vh;
 }
+
 .leftSec {
   width: 100vw;
 }
+
 .rightSec {
   width: 50vw;
   margin: 5vw 2vw;
 }
+
 .secHead {
   font-size: 2.5rem;
   font-weight: var(--heading-1-text-weight);
   color: var(--gdsc-blue-3-100);
 }
+
 .title,
 .content,
 .tags,
@@ -25,13 +29,15 @@
   margin: 1rem;
   padding: 0.5rem;
 }
+
 .title,
 .content,
 .tags,
 .ref {
   border: 1px solid var(--gdsc-grayish-1-100);
-  border-radius: 6px;
+  border-radius: 0.375rem;
 }
+
 .titleHead,
 .contentHead,
 .tagHead,
@@ -41,28 +47,37 @@
   color: var(--gdsc-dark-1-100);
   margin: 0.25rem;
 }
+
 .instHead {
   font-weight: var(--heading-2-text-weight);
   color: var(--gdsc-dark-1-100);
   margin: 0.25rem;
   font-size: 1.3rem;
 }
+
 .leftSec p,
 input {
   margin: 0.25rem;
   color: var(--gdsc-neutral-1-100);
 }
+
 input {
   border: 1px solid var(--gdsc-grayish-1-100);
-  border-radius: 5px;
+  border-radius: 0.313rem;
   width: 95%;
   height: auto;
   padding: 0.7rem;
 }
-.content{
+
+.content {
   height: auto;
   padding: 0.7rem;
 }
+
+.tag_instruction {
+  font-size: 0.75rem;
+}
+
 .btn {
   padding: 0.5rem 1.1rem;
   background-color: var(--gdsc-blue-3-100);
@@ -71,27 +86,34 @@ input {
   color: white;
   width: 17vw;
   border: none;
-  border-radius: 7px;
+  border-radius: 0.438rem;
   cursor: pointer;
 }
+
 .btn:hover {
   opacity: 0.9;
 }
+
 .rightImg img {
   object-fit: cover;
   overflow: hidden;
   height: 100%;
   width: 100%;
 }
+
 .instructions {
   li {
     margin: 0.5rem;
   }
 }
+
+
 @media only screen and (max-width: 1000px) {
+  
   .secHead {
     font-size: 2rem;
   }
+
   .instructions {
     .instHead {
       font-size: 0.9rem;
@@ -100,11 +122,14 @@ input {
       font-size: 0.75rem;
     }
   }
+
   .btn {
     font-size: 0.9rem;
     padding: 0.5rem 0.8rem;
   }
 }
+
+
 @media only screen and (max-width: 870px) {
   .titleHead,
   .contentHead,
@@ -114,19 +139,25 @@ input {
   }
 }
 @media only screen and (max-width: 810px) {
+  
   .createArticle {
     padding: 3vh 3vh;
     flex-direction: column;
   }
+
   .leftSec {
     width: 90vw;
+    margin: auto;
   }
+
   .rightSec {
-    width: 50vw;
-    margin: 3vw 2vw;
+    width: 70vw;
+    margin: auto;
   }
+
   .btn {
     font-size: 0.75rem;
     padding: 0.3rem 0.5rem;
+    width: 80vw;
   }
 }

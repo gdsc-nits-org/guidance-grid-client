@@ -1,18 +1,10 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 import JoditEditor from "jodit-react";
 import style from "./CreateArticle.module.scss";
 
 const CreateArticle = () => {
   const editor = useRef(null);
   const [content, setContent] = useState("");
-  // const config = useMemo(
-  //   {
-  //     readonly: false, // all options from https://xdsoft.net/jodit/docs/,
-  //     placeholder: placeholder || "Start typings...",
-  //   },
-  //   [placeholder]
-  // );
-
   return (
     <section className={style.createArticle}>
       <div className={style.leftSec}>
@@ -25,13 +17,11 @@ const CreateArticle = () => {
         <div className={style.content}>
           <h1 className={style.contentHead}>Content</h1>
           <p>Write about your topic</p>
-          {/* <textarea name="" id="" ></textarea> */}
           <JoditEditor
             ref={editor}
             value={content}
-            // config={config}
             tabIndex={-0.5} // tabIndex of textarea
-            onBlur={newContent => setContent(newContent)}
+            onBlur={(newContent) => setContent(newContent)}
             onChange={(newContent) => setContent(newContent)}
           />
         </div>
@@ -43,6 +33,9 @@ const CreateArticle = () => {
         <div className={style.tags}>
           <h1 className={style.tagHead}>Tags</h1>
           <p>Add upto 5 tags to describe your article</p>
+          <p className={style.tag_instruction}>
+            (Place a comma between each tag that you add to the post.)
+          </p>
           <input type={style.text} placeholder="Enter tags" />
         </div>
         <div className={style.submit}>
