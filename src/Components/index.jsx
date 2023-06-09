@@ -12,6 +12,7 @@ import TopWriters from "./TopWriters/TopWriters";
 import SuggestedPosts from "./SuggestedPosts/SuggestedPosts";
 import Author from "./Author/Author";
 import Share from "./Share/Share";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 export {
   Button,
@@ -28,4 +29,5 @@ export {
   SuggestedPosts,
   Author,
   Share,
+  ScrollToTop,
 };
