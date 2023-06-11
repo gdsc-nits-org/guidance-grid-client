@@ -2,13 +2,7 @@
 import { useState } from "react";
 import { Icon } from "@iconify-icon/react";
 import styles from "./Profile.module.scss";
-import {
-  ArticleCard,
-  Loading,
-  ExpComp,
-  EditProfile,
-  EditExperience,
-} from "../../Components";
+import { ArticleCard, Loading, ExpComp } from "../../Components";
 import { useFetchData } from "../../Hooks";
 const ProfilePage = () => {
   const [articleRespState] = useFetchData("/articles/getarticles.json");
@@ -175,9 +169,6 @@ const ProfilePage = () => {
       </div>
 
       {/* ....................... EDIT FORMS .................................................... */}
-
-      <EditProfile />
-      <EditExperience />
     </div>
   );
 };

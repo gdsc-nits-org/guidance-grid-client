@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Footer, Navbar } from "./Components";
-import { Home, Error, Bookmark, ArticlePage, ProfilePage } from "./Pages";
+import { Home, Error, Bookmark, ArticlePage, ProfilePage, ProfileEdit } from "./Pages";
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
         <Route path="/posts" element={<ArticlePage />} />
         <Route path="*" element={<Error error="Looks Like You Are Out Of Grids" />} />
         <Route path="/user/profile" element={<ProfilePage user="1" />} />
+        <Route path="/user/profileedit" element={<ProfileEdit />} />
       </Routes>
       <Footer />
     </>
