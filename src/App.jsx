@@ -8,6 +8,7 @@ import {
   CreateArticle,
   ProfilePage,
   ProfileEdit,
+  Landing
 } from "./Pages";
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/bookmarks" element={<Bookmark />} />
         <Route path="/posts" element={<ArticlePage />} />
         <Route path="*" element={<Error error="Looks Like You Are Out Of Grids" />} />

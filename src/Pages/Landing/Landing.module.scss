@@ -1,0 +1,39 @@
+@mixin boxes($headingColor: var(--gdsc-blue-3-100), $fontsize: 2rem) {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  .mainheading {
+    font-size: $fontsize;
+    color: $headingColor;
+    font-weight: var(--heading-1-text-weight);
+  }
+}
+
+.firstbox {
+  display: flex;
+  justify-content: space-between;
+  @include boxes($headingColor: var(--gdsc-blue-3-100), $fontsize: 2.5rem);
+}
+
+.secondbox {
+  @include boxes($headingColor: var(--gdsc-green-1-100), $fontsize: 2rem);
+}
+
+.thirdbox {
+  @include boxes($headingColor: var(--gdsc-green-1-100), $fontsize: 2rem);
+}
+
+.fourthbox {
+  @include boxes($headingColor: var(--gdsc-red-1-100), $fontsize: 2rem);
+  .devcards{
+    .ultraanimefanboys, .juniors{
+      margin-top: 4rem;
+      flex-wrap: wrap;
+      display: flex;
+      gap: 1rem 6rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

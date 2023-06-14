@@ -1,0 +1,33 @@
+.container {
+  width: 8rem;
+  .devpic {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .credentials {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    .name{
+        color: var(--gdsc-grayish-1-100);
+        font-size: 1.2rem;
+        font-weight: var(--heading-1-text-weight);
+    }
+    .position{
+        color: var(--gdsc-neutral-1-100);
+        font-size: 1rem;
+        font-weight: var(--heading-2-text-weight);
+    }
+  }
+}
