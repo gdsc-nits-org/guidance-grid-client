@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 75%;
+
   .mainheading {
     font-size: $fontsize;
     color: $headingColor;
@@ -26,8 +27,10 @@
 
 .fourthbox {
   @include boxes($headingColor: var(--gdsc-red-1-100), $fontsize: 2rem);
-  .devcards{
-    .ultraanimefanboys, .juniors{
+
+  .devcards {
+    .ultraanimefanboys,
+    .juniors {
       margin-top: 4rem;
       flex-wrap: wrap;
       display: flex;
