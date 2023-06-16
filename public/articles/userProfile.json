@@ -4,7 +4,7 @@
     "id": "5786799",
     "name": "Saurav Pal",
     "followers": "500",
-    "fol":true,
+    "fol": true,
     "display": "https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
     "cover": "https://images.unsplash.com/photo-1560364897-91578ff41817?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
     "fb": "https://res.cloudinary.com/dbpcvaquc/image/upload/v1679602400/sauravdaa_kyosyn.png",
@@ -13,7 +13,7 @@
     "bio": "(developer) has an excellent OOP, C# Language and the .NET framework knowledge. Also JavaScript Language, HTML and CSS languages and great understanding of HTTP and web applications lifecycle specifically single page applications. Great experience with source control systems (Git), experience with issue tracking systems: JIRA. Understanding unit testing concepts and understanding of behavior driven tests and of continuous integration and deployment processes.",
     "exp": [
       {
-        "id":"456",
+        "id": "456",
         "location": "NIT SILCHAR",
         "desig": "UI/UX member",
         "joinMon": "August",
@@ -23,7 +23,7 @@
       },
 
       {
-        "id":"457",
+        "id": "457",
         "location": "NEHU",
         "desig": "Architecture",
         "joinMon": "August",
@@ -33,7 +33,7 @@
       },
 
       {
-        "id":"458",
+        "id": "458",
         "location": "Assam University",
         "desig": "Kerani",
         "joinMon": "August",
