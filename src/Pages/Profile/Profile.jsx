@@ -1,6 +1,6 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Icon } from "@iconify-icon/react";
+import { Link } from "react-router-dom";
 import styles from "./Profile.module.scss";
 import { ArticleCard, Loading, ExpComp } from "../../Components";
 import { useFetchData } from "../../Hooks";
@@ -8,17 +8,14 @@ const ProfilePage = () => {
   const [articleRespState] = useFetchData("/articles/getarticles.json");
   const [userRespState] = useFetchData("/articles/userProfile.json");
   const userData = userRespState.response;
-  const [Follow, isFollow] = useState(0);
-  const [status, changeStatus] = useState("Follow");
+  const [follow, isFollow] = useState(userData.fol);
 
-  const follow = () => {
-    if (Follow === 0) {
-      isFollow(1);
-      changeStatus("Followed");
-    } else {
-      isFollow(0);
-      changeStatus("Follow");
-    }
+  useEffect(() => {
+    isFollow(userData?.fol);
+  }, [userData]);
+
+  const handleFollow = () => {
+    isFollow((prevState) => !prevState);
   };
 
   return (
@@ -26,7 +23,13 @@ const ProfilePage = () => {
       {/* .............. cover section........................................... */}
       <div className={styles.cover}>
         <div className={styles.editProfile}>
-          <Icon icon="material-symbols:settings" color="white" width="20" />
+          <Link to="/user/profileedit">
+            <Icon
+              icon="material-symbols:settings"
+              className={styles.editProfileIcon}
+              width="20"
+            />
+          </Link>
         </div>
         <div className={styles.coverPic}>
           <img src={userData.cover} alt="Your Cover Here" />
@@ -41,8 +44,11 @@ const ProfilePage = () => {
 
           <div className={styles.profileData}>
             <h2>{userData.name}</h2>
-            <button id={Follow === 0 ? styles.follow : styles.unfollow} onClick={follow}>
-              {status}
+            <button
+              className={follow ? styles.follow : styles.unfollow}
+              onClick={handleFollow}
+            >
+              {follow ? "Followed" : "Follow"}
             </button>
             <p>{userData.followers} followers</p>
 
@@ -50,7 +56,7 @@ const ProfilePage = () => {
             <div className={styles.socials}>
               <p>
                 {" "}
-                <a href={userData.fb}>
+                <a href={`${userData.fb}`}>
                   <Icon icon="ri:facebook-fill" width="20" />
                 </a>{" "}
               </p>
@@ -78,40 +84,18 @@ const ProfilePage = () => {
           {/* ........experience tab for phone size.............................. */}
 
           <div className={styles.exprMobile}>
-            <h2>
-              Experience
-              <span id={styles.expIconColor}>
-                <Icon
-                  icon="material-symbols:add-circle-outline"
-                  color="black"
-                  width="15"
-                />
-              </span>
-            </h2>
-            <ExpComp
-              head="NIT SILCHAR"
-              desig="UI/UX Member"
-              jMon="August"
-              jYear="2022"
-              EMon="Present"
-              EYear="2023"
-            />
-            <ExpComp
-              head="NEHU"
-              desig="ARCHITECTURE"
-              jMon="Monday"
-              jYear="2021"
-              EMon="JAnuary"
-              EYear="2022"
-            />
-            <ExpComp
-              head="Assam University"
-              desig="KERANI"
-              jMon="December"
-              jYear="2022"
-              EMon="June"
-              EYear="2023"
-            />
+            <h2>Experience</h2>
+            {userData?.exp?.map((it) => (
+              <ExpComp
+                key={it.id}
+                head={it.location}
+                desig={it.desig}
+                jMon={it.joinMon}
+                jYear={it.joinYear}
+                EMon={it.endMon}
+                EYear={it.endYear}
+              />
+            ))}
           </div>
 
           {/* ........Recent Posts............................................. */}
@@ -129,46 +113,22 @@ const ProfilePage = () => {
           <div className={styles.expr}>
             {/* ........experience tab for Desktop................................. */}
 
-            <h2>
-              Experience
-              <span id={styles.expIconColor}>
-                <Icon
-                  icon="material-symbols:add-circle-outline"
-                  color="black"
-                  width="15"
-                />
-              </span>
-            </h2>
+            <h2>Experience</h2>
 
-            <ExpComp
-              head="NIT SILCHAR"
-              desig="UI/UX Member"
-              jMon="August"
-              jYear="2022"
-              EMon="Present"
-              EYear="2023"
-            />
-            <ExpComp
-              head="NEHU"
-              desig="ARCHITECTURE"
-              jMon="Monday"
-              jYear="2021"
-              EMon="JAnuary"
-              EYear="2022"
-            />
-            <ExpComp
-              head="Assam University"
-              desig="KERANI"
-              jMon="December"
-              jYear="2022"
-              EMon="June"
-              EYear="2023"
-            />
+            {userData?.exp?.map((it) => (
+              <ExpComp
+                key={it.id}
+                head={it.location}
+                desig={it.desig}
+                jMon={it.joinMon}
+                jYear={it.joinYear}
+                EMon={it.endMon}
+                EYear={it.endYear}
+              />
+            ))}
           </div>
         </div>
       </div>
-
-      {/* ....................... EDIT FORMS .................................................... */}
     </div>
   );
 };

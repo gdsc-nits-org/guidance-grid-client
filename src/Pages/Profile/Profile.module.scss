@@ -26,6 +26,10 @@
       cursor: pointer;
       background-color: rgba(170, 170, 170, 0.3);
     }
+
+    .editProfileIcon {
+      color: white;
+    }
   }
 
   .coverPic {
@@ -87,23 +91,35 @@
         padding: 1%;
       }
 
-      button {
+      .unfollow {
         margin: 0.5%;
         padding: 0.5% 1.2%;
         font-size: 1rem;
         font-weight: 600;
-
         width: fit-content;
         background-color: white;
-        border: 0.063rem solid #008de9;
-        color: #008de9;
+        border: 0.063rem solid var(--gdsc-blue-2-100);
+        color: var(--gdsc-blue-2-100);
         border-radius: 0.438rem;
+        cursor: pointer;
 
         &:hover {
-          background-color: #008de9;
+          background-color: var(--gdsc-blue-2-100);
           color: #ffffff;
-          cursor: pointer;
         }
+      }
+
+      .follow {
+        margin: 0.5%;
+        padding: 0.5% 1.2%;
+        font-size: 1rem;
+        font-weight: 600;
+        width: fit-content;
+        background-color: var(--gdsc-blue-2-100);
+        border: 0.063rem solid var(--gdsc-blue-2-100);
+        color: white;
+        border-radius: 0.438rem;
+        cursor: pointer;
       }
 
       p {
@@ -163,7 +179,7 @@
     .exprMobile {
       h2 {
         text-align: center;
-        color: #30a953;
+        color: var(--gdsc-green-1-100);
       }
 
       display: none;
@@ -204,7 +220,7 @@
       margin: 10rem 2%;
 
       h2 {
-        color: #30a953;
+        color: var(--gdsc-green-1-100);
       }
     }
   }
@@ -221,16 +237,6 @@
 
     display: block;
   }
-}
-
-.follow {
-  color: "white";
-  background-color: "#008DE9";
-}
-
-.unfollow {
-  color: "#008DE9";
-  background-color: "white";
 }
 
 // ............................................ADD EXPERIENCE FORM GRID SECTION.....................................

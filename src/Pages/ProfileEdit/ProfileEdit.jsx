@@ -1,26 +1,46 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Icon } from "@iconify-icon/react";
 import styles from "./ProfileEdit.module.scss";
+import { useFetchData } from "../../Hooks";
 
 const ProfileEdit = () => {
+  const [userRespState] = useFetchData("/articles/userProfile.json");
+  const userData = userRespState.response;
   const hiddenProfileInput = useRef(null);
   const hiddenCoverInput = useRef(null);
-  const [profileName, setProfileName] = useState();
-  const [coverName, setCoverName] = useState();
-  const [name, setName] = useState("Saurav Pal");
+  const [profilePic, setprofilePic] = useState();
+  const [coverPic, setcoverPic] = useState();
+  const [user, setUser] = useState({
+    name: userData?.name,
+    bio: userData?.bio,
+  });
+
+  useEffect(() => {
+    setUser({
+      name: userData?.name,
+      bio: userData?.bio,
+    });
+  }, [userData]);
 
   const handleName = (e) => {
-    setName(e.target.value);
+    setUser({
+      name: e.target.value,
+    });
+  };
+  const handleBio = (e) => {
+    setUser({
+      bio: e.target.value,
+    });
   };
 
   const handleProfilePic = (e) => {
     e.preventDefault();
-    setProfileName(e.target.files[0].name);
+    setprofilePic(e.target.files[0].name);
   };
 
   const handleCoverPic = (e) => {
     e.preventDefault();
-    setCoverName(e.target.files[0].name);
+    setcoverPic(e.target.files[0].name);
   };
 
   const handleProfileClick = (e) => {
@@ -38,7 +58,7 @@ const ProfileEdit = () => {
         <div>
           <h1>EDIT PROFILE</h1>
           <h2>Name</h2>
-          <input type="text" value={name} onChange={handleName} />
+          <input type="text" defaultValue={user.name} onChange={handleName} />
         </div>
         <div>
           <img src="/images/profileEdit.png" alt="profile Edit" />
@@ -56,13 +76,13 @@ const ProfileEdit = () => {
 
             <div className={styles.uploadBox}>
               <button className={styles.uploadButton} onClick={handleProfileClick}>
-                {profileName ? (
+                {profilePic ? (
                   <p
                     style={{
                       fontSize: "1rem",
                     }}
                   >
-                    {profileName}
+                    {profilePic}
                   </p>
                 ) : (
                   <>
@@ -93,13 +113,13 @@ const ProfileEdit = () => {
 
             <div className={styles.uploadBox}>
               <button className={styles.uploadButton} onClick={handleCoverClick}>
-                {coverName ? (
+                {coverPic ? (
                   <p
                     style={{
                       fontSize: "1rem",
                     }}
                   >
-                    {coverName}
+                    {coverPic}
                   </p>
                 ) : (
                   <>
@@ -126,7 +146,13 @@ const ProfileEdit = () => {
           {/* BIO.......................... */}
           <div className={styles.bio}>
             <h1 className={styles.formHeading}>Bio</h1>
-            <textarea className={styles.bioArea} name="bio" id="bio"></textarea>
+            <textarea
+              className={styles.bioArea}
+              defaultValue={user.bio}
+              onChange={handleBio}
+              name="bio"
+              id="bio"
+            ></textarea>
           </div>
 
           <div className={styles.exp}>
