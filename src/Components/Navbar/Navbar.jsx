@@ -51,6 +51,14 @@ const Navbar = () => {
           >
             Resources
           </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? `${styles.navlinks} ${styles.active}` : styles.navlinks
+            }
+            to="/create-article"
+          >
+            Article
+          </NavLink>
           <Link className={`${styles.profile} ${styles.active}`} to="/user/profile">
             <Icon icon="healthicons:ui-user-profile" width="37" height="37" />
           </Link>

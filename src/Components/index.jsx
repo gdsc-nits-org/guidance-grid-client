@@ -12,6 +12,7 @@ import TopWriters from "./TopWriters/TopWriters";
 import SuggestedPosts from "./SuggestedPosts/SuggestedPosts";
 import Author from "./Author/Author";
 import Share from "./Share/Share";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import ExpComp from "./ExprienceBox/Exp";
 
 export {
@@ -29,5 +30,6 @@ export {
   SuggestedPosts,
   Author,
   Share,
+  ScrollToTop,
   ExpComp,
 };
