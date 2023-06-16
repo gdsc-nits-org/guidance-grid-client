@@ -25,6 +25,14 @@
     color: #578cf1;
   }
 
+  .btncont {
+    display: flex;
+    justify-content: center;
+    .signupbtn {
+      padding: 0.2rem 1rem;
+    }
+  }
+
   .SignupForm {
     @include flex-display(column, center);
     margin-bottom: 2rem;

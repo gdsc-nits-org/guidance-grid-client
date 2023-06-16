@@ -59,6 +59,9 @@ const SignUpForm = () => {
           />
         </label>
       </form>
+      <div className={style.btncont}>
+        <button className={style.signupbtn}>Sign Up</button>
+      </div>
 
       <div className={style.formBreak}>
         <div className={style.horizontalLine}></div>

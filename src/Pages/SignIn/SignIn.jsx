@@ -8,10 +8,6 @@ const SignIn = () => {
       <div className={style.SignIn}>
         <SignInForm />
       </div>
-      <div className={style.gdsc}>
-        <img className={style.gdscLogo} src="/images/logo.svg" alt="" />
-        <p>Google Developers Students Club NITS</p>
-      </div>
       <img className={style.circle} src="/images/circle.svg" alt="" />
       <img className={style.rectangle} src="/images/rectangle.svg" alt="" />
       <img className={style.triangle} src="/images/triangle.svg" alt="" />

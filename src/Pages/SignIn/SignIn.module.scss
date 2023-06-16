@@ -6,34 +6,10 @@
 }
 
 .SignIn {
+  margin-top: 2rem;
   height: 100vh;
   display: flex;
   align-items: center;
-}
-
-.gdsc {
-  position: absolute;
-  left: 1rem;
-  bottom: 2rem;
-  @include flex-display(row, space-around);
-  width: 40%;
-
-  .gdscLogo {
-    width: 5rem;
-  }
-
-  p {
-    font-family: var(--gdsc-font-3);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    /* identical to box height */
-
-    text-align: center;
-
-    color: #7e7e7e;
-  }
 }
 
 .circle {

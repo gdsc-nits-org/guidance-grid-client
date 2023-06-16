@@ -44,6 +44,10 @@ const SignInForm = () => {
         </label>
       </form>
 
+      <div className={style.btncont}>
+        <button className={style.signupbtn}>Login</button>
+      </div>
+
       <div className={style.formBreak}>
         <div className={style.horizontalLine}></div>
         <div className={style.formText}>or log in with</div>
