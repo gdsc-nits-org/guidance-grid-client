@@ -107,9 +107,7 @@ input {
   }
 }
 
-
 @media only screen and (max-width: 1000px) {
-  
   .secHead {
     font-size: 2rem;
   }
@@ -129,7 +127,6 @@ input {
   }
 }
 
-
 @media only screen and (max-width: 870px) {
   .titleHead,
   .contentHead,
@@ -139,7 +136,6 @@ input {
   }
 }
 @media only screen and (max-width: 810px) {
-  
   .createArticle {
     padding: 3vh 3vh;
     flex-direction: column;
