@@ -5,5 +5,6 @@ import ArticlePage from "./ArticlePage/ArticlePage";
 import CreateArticle from "./CreateArticle/CreateArticle";
 import ProfilePage from "./Profile/Profile";
 import ProfileEdit from "./ProfileEdit/ProfileEdit";
+import Landing from "./Landing/Landing";
 
-export { Home, Error, Bookmark, ArticlePage, CreateArticle, ProfilePage, ProfileEdit };
+export { Home, Error, Bookmark, ArticlePage, CreateArticle, ProfilePage, ProfileEdit, Landing };

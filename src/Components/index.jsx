@@ -14,6 +14,7 @@ import Author from "./Author/Author";
 import Share from "./Share/Share";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import ExpComp from "./ExprienceBox/Exp";
+import DeveloperCard from "./DeveloperCard/DeveloperCard";
 
 export {
   Button,
@@ -32,4 +33,5 @@ export {
   Share,
   ScrollToTop,
   ExpComp,
+  DeveloperCard
 };
