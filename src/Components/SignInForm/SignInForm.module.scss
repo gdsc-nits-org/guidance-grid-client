@@ -15,7 +15,7 @@
 
   .formHeader {
     @include flex-display(column, center);
-    font-family: var(--gdsc-font-2);
+    font-family: var(--gdsc-font-4);
     font-style: normal;
     font-weight: 600;
     font-size: 1.5rem;
@@ -139,6 +139,7 @@
   .formContainer {
     .alreadyAccount {
       @include flex-display(column, space-around);
+      width: 80%;
     }
   }
 }
@@ -146,6 +147,10 @@
 @media screen and (max-width: 1100px) {
   .formContainer {
     width: 40vw;
+
+    .alreadyAccount {
+      width: 90%;
+    }
   }
 }
 
@@ -153,6 +158,18 @@
 @media screen and (max-width: 900px) {
   .formContainer {
     width: 60vw;
+
+    .SignupForm {
+      .formInput {
+        &::placeholder {
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .alreadyAccount {
+      width: 100%;
+    }
   }
 }
 

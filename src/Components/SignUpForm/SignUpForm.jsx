@@ -18,7 +18,7 @@ const SignUpForm = () => {
             className={style.formInput}
             type="text"
             name="name"
-            placeholder="Enter your name"
+            placeholder="Name"
             onChange={(e) =>
               setFormValues({
                 ...formValues,
@@ -33,7 +33,7 @@ const SignUpForm = () => {
             className={style.formInput}
             type="email"
             name="email"
-            placeholder="Enter your email"
+            placeholder="Email"
             onChange={(e) =>
               setFormValues({
                 ...formValues,
@@ -48,7 +48,7 @@ const SignUpForm = () => {
             className={style.formInput}
             type="password"
             name="password"
-            placeholder="Enter your password"
+            placeholder="Password"
             onChange={(e) =>
               setFormValues({
                 ...formValues,

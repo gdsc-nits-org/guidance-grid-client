@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 
 :root {
   --gdsc-font-1: "Poppins", sans-serif;
-  --gdsc-font-2: "Inter", sans-serif;
+  // used in edit profile
+  --gdsc-font-2: "Barlow Condensed", sans-serif;
+  --gdsc-font-4: "Inter", sans-serif;
   --gdsc-font-3: "Noto Sans", sans-serif;
+
 
   --gdsc-blue-1-100: #4885ed;
   --gdsc-blue-2-100: #4285f4;
@@ -27,8 +31,8 @@
   --gdsc-shadow-1-100: rgb(218, 215, 215);
   --gdsc-logo-text: #666c74;
 
-  --heading-1-text-weight: 600;
-  --heading-2-text-weight: 500;
+  --heading-1-text-weight: 700;
+  --heading-2-text-weight: 600;
   --paragraph-1-text-weight: 400;
   --paragraph-2-text-weight: 300;
 

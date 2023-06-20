@@ -15,6 +15,8 @@ import Share from "./Share/Share";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
 import SignInForm from "./SignInForm/SignInForm";
 import SignUpForm from "./SignUpForm/SignUpForm";
+import ExpComp from "./ExprienceBox/Exp";
+import DeveloperCard from "./DeveloperCard/DeveloperCard";
 
 export {
   Button,
@@ -33,5 +35,7 @@ export {
   Share,
   ScrollToTop,
   SignInForm,
-  SignUpForm
+  SignUpForm,
+  ExpComp,
+  DeveloperCard
 };
