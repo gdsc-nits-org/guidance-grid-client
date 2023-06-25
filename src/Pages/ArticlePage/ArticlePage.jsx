@@ -1,12 +1,11 @@
 import { useFetchData } from "../../Hooks";
 import {
   Author,
-  Suggestions,
-  Share,
   CommentBox,
   Reaction,
   Comments,
   ArticleBody,
+  ArticleSideBar,
 } from "../../Components";
 import styles from "./ArticlePage.module.scss";
 
@@ -16,6 +15,7 @@ const ArticlePage = () => {
 
   return (
     <div className={styles.page}>
+      <ArticleSideBar />
       {authorDataResp.response.map((d, index) => (
         <Author
           key={index}
@@ -31,14 +31,12 @@ const ArticlePage = () => {
       ))}
       {articleDataResp.response.map((item) => (
         <>
+          <ArticleBody data={item} key={item.id} />
           <div className={styles.reactions}>
             <Reaction data={item.metadata} key={item.title} />
           </div>
-          <ArticleBody data={item} key={item.id} />
         </>
       ))}
-      <Suggestions />
-      <Share />
       <CommentBox />
       <Comments />
     </div>

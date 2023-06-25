@@ -1,5 +1,6 @@
 .card {
-  margin: 1rem;
+  float: right;
+  margin: 1rem 4rem;
   display: grid;
   grid-template-columns: 0.2fr 1fr 1fr;
   grid-template-rows: 0.3fr 1.7fr;
@@ -9,7 +10,7 @@
     "profile details cover"
     "title title cover";
   height: 10%;
-  width: 30%;
+  width: calc(100% - 4vw);
   align-items: center;
   justify-content: center;
   .details {

@@ -17,6 +17,7 @@ import CommentBox from "./Comments/CommentBox/CommentBox";
 import Reaction from "./Reaction/Reaction";
 import Comments from "./Comments/Comments/Comments";
 import ArticleBody from "./ArticleBody/ArticleBody";
+import ArticleSideBar from "./ArticleSideBar/ArticleSideBar";
 
 export {
   Button,
@@ -38,4 +39,5 @@ export {
   Reaction,
   Comments,
   ArticleBody,
+  ArticleSideBar,
 };
