@@ -18,6 +18,9 @@ import Reaction from "./Reaction/Reaction";
 import Comments from "./Comments/Comments/Comments";
 import ArticleBody from "./ArticleBody/ArticleBody";
 import ArticleSideBar from "./ArticleSideBar/ArticleSideBar";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import ExpComp from "./ExprienceBox/Exp";
+import DeveloperCard from "./DeveloperCard/DeveloperCard";
 
 export {
   Button,
@@ -40,4 +43,7 @@ export {
   Comments,
   ArticleBody,
   ArticleSideBar,
+  ScrollToTop,
+  ExpComp,
+  DeveloperCard,
 };
