@@ -13,6 +13,8 @@ import SuggestedPosts from "./SuggestedPosts/SuggestedPosts";
 import Author from "./Author/Author";
 import Share from "./Share/Share";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import SignInForm from "./SignInForm/SignInForm";
+import SignUpForm from "./SignUpForm/SignUpForm";
 import ExpComp from "./ExprienceBox/Exp";
 import DeveloperCard from "./DeveloperCard/DeveloperCard";
 
@@ -32,6 +34,8 @@ export {
   Author,
   Share,
   ScrollToTop,
+  SignInForm,
+  SignUpForm,
   ExpComp,
   DeveloperCard
 };
