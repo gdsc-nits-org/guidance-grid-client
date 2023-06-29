@@ -11,6 +11,7 @@ import {
   Landing,
   ProfilePage,
   ProfileEdit,
+  QnA,
 } from "./Pages";
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/user/profile" element={<ProfilePage user="1" />} />
         <Route path="/user/profileedit" element={<ProfileEdit />} />
+        <Route path="/qnapage" element={<QnA />} />
         <Route path="*" element={<Error error="Error" />} />
       </Routes>
       <Footer />

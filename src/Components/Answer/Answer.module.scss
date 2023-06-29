@@ -1,0 +1,54 @@
+@mixin flex-display($direction, $content) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: center;
+}
+
+.answerBox {
+  @include flex-display(row, space-between);
+  background-color: var(--gdsc-bg-2-100);
+  padding: 1rem 2rem;
+  width: 75%;
+  transform: translateX(7%);
+  border-radius: 6px;
+  margin-bottom: 4rem;
+
+  .left {
+    @include flex-display(row, space-around);
+    width: 35%;
+
+    .answers,
+    .views {
+      @include flex-display(row, space-between);
+      width: 40%;
+      padding: 0.3rem 1rem;
+      border: 1px solid var(--gdsc-grayish-2-100);
+      border-radius: 0.5rem;
+      background-color: var(--gdsc-bg-3-100);
+      color: var(--gdsc-dark-2-100);
+      p {
+        font-family: var(--gdsc-font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.5rem;
+        line-height: 0.167rem;
+        text-align: justify;
+        color: var(--gdsc-grayish-2-100);
+      }
+    }
+  }
+
+  .right {
+    @include flex-display(row, space-around);
+
+    .giveAnswer {
+      cursor: pointer;
+      padding: 0.5rem 2rem;
+      color: var(--gdsc-bg-3-100);
+      background: var(--gdsc-blue-3-100);
+      border: 1px solid var(--gdsc-bg-1-100);
+      border-radius: 7px;
+    }
+  }
+}

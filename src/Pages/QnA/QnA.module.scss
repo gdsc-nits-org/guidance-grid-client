@@ -1,0 +1,133 @@
+@mixin flex-display($direction, $content) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: center;
+}
+
+.questionContainer,
+.queriesContainer {
+  margin: 7rem 4rem;
+  position: relative;
+
+  .header {
+    font-family: var(--gdsc-font-1);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: var(--gdsc-blue-3-100);
+  }
+
+  .tabBar {
+    list-style-type: none;
+    @include flex-display(row, space-between);
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    button {
+      font-family: var(--gdsc-font-1);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      color: var(--grey-text-2-100);
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+
+    .active {
+      color: var(--gdsc-dark-1-100);
+    }
+  }
+
+  .design {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .postQuestion {
+    @include flex-display(column, space-around);
+    width: 14rem;
+    position: absolute;
+    right: 0;
+    top: 15%;
+
+    .post {
+      cursor: pointer;
+      width: 95%;
+      padding: 0.5rem 0;
+      color: var(--gdsc-bg-3-100);
+      background: var(--gdsc-blue-3-100);
+      border: 1px solid var(--gdsc-bg-1-100);
+      border-radius: 7px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      .statValues {
+        width: 45%em;
+        height: 3rem;
+        font-family: var(--gdsc-font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        margin: 0.5rem;
+        padding: 0.3rem 1rem;
+        border: 1px solid var(--gdsc-grayish-2-100);
+        border-radius: 0.5rem;
+        background-color: var(--gdsc-bg-2-100);
+        color: var(--gdsc-dark-2-100);
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .questionContainer,
+  .queriesContainer {
+    .design {
+      display: none;
+    }
+
+    .postQuestion {
+      top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .questionContainer,
+  .queriesContainer {
+    .header {
+      font-size: 2rem;
+    }
+
+    .tabBar {
+      display: none;
+    }
+
+    .postQuestion {
+      position: relative;
+      width: 80%;
+      @include flex-display(row-reverse, space-between);
+
+      .post {
+        width: 30%;
+      }
+
+      .stats {
+        @include flex-display(row, space-between);
+        .statValues {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
