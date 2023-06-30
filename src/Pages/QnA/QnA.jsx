@@ -14,6 +14,9 @@ const QnA = () => {
       question: "What is ReactJS and how can it be used in development?",
       desc: "ed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Sed ut perspiciatis unde iste natus e",
       tags: ["React", "CSS", "Android"],
+      answers: 5,
+      views: 345,
+      likes: 16,
     },
     {
       id: 2,
@@ -22,6 +25,9 @@ const QnA = () => {
       question: "What is ReactJS and how can it be used in development?",
       desc: "ed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Sed ut perspiciatis unde iste natus e",
       tags: ["React", "CSS", "Android"],
+      answers: 5,
+      views: 345,
+      likes: 16,
     },
     {
       id: 3,
@@ -30,8 +36,11 @@ const QnA = () => {
       question: "What is ReactJS and how can it be used in development?",
       desc: "ed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Sed ut perspiciatis unde iste natus e",
       tags: ["React", "CSS", "Android"],
+      answers: 5,
+      views: 345,
+      likes: 16,
     },
-  ];
+  ]; // Example data...
 
   return (
     <div className={style.QnA}>
@@ -85,16 +94,16 @@ const QnA = () => {
         <div>
           {questions.map((ques) => {
             return (
-              <div>
+              <div key={ques.id}>
                 <Questions
                   author={ques.author}
                   datePosted={ques.datePosted}
                   question={ques.question}
                   desc={ques.desc}
                   tags={ques.tags}
-                  key={ques.id}
+                  likes={ques.likes}
                 />
-                <Answer />
+                <Answer answers={ques.answers} views={ques.views} likes={ques.likes} />
               </div>
             );
           })}
@@ -155,6 +164,7 @@ const QnA = () => {
                 desc={ques.desc}
                 tags={ques.tags}
                 key={ques.id}
+                likes={ques.likes}
               />
             );
           })}

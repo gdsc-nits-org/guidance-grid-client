@@ -1,11 +1,18 @@
 import { Icon } from "@iconify-icon/react";
 import style from "./Questions.module.scss";
 
-const Questions = ({ author, datePosted, question, desc, tags }) => {
+const Questions = ({ author, datePosted, question, desc, tags, likes }) => {
   return (
     <div className={style.container}>
-      <div className={style.profile}>
-        <Icon icon="healthicons:ui-user-profile" width="37" height="37" />
+      <div className={style.left}>
+        <div className={style.profile}>
+          <Icon icon="healthicons:ui-user-profile" width="37" height="37" />
+        </div>
+        <div className={style.likes}>
+          <Icon icon="teenyicons:up-solid" width="15" height="15" />
+          {likes}
+          <Icon icon="teenyicons:down-solid" width="15" height="15" />
+        </div>
       </div>
       <div className={style.questionBox}>
         <div className={style.header}>
