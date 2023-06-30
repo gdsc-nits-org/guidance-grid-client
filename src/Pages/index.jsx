@@ -8,5 +8,18 @@ import SignUp from "./SignUp/SignUp";
 import ProfilePage from "./Profile/Profile";
 import ProfileEdit from "./ProfileEdit/ProfileEdit";
 import Landing from "./Landing/Landing";
+import QnA from "./QnA/QnA";
 
-export { Home, Error, Bookmark, ArticlePage, SignIn, SignUp, CreateArticle, ProfilePage, ProfileEdit, Landing };
+export {
+  Home,
+  Error,
+  Bookmark,
+  ArticlePage,
+  SignIn,
+  SignUp,
+  CreateArticle,
+  ProfilePage,
+  ProfileEdit,
+  Landing,
+  QnA,
+};

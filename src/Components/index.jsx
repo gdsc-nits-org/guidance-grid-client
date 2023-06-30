@@ -17,6 +17,8 @@ import SignInForm from "./SignInForm/SignInForm";
 import SignUpForm from "./SignUpForm/SignUpForm";
 import ExpComp from "./ExprienceBox/Exp";
 import DeveloperCard from "./DeveloperCard/DeveloperCard";
+import Answer from "./Answer/Answer";
+import Questions from "./Questions/Questions";
 
 export {
   Button,
@@ -37,5 +39,7 @@ export {
   SignInForm,
   SignUpForm,
   ExpComp,
-  DeveloperCard
+  DeveloperCard,
+  Answer,
+  Questions,
 };

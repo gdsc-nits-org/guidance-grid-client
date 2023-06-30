@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 
 :root {
@@ -10,10 +10,10 @@
   --gdsc-font-4: "Inter", sans-serif;
   --gdsc-font-3: "Noto Sans", sans-serif;
 
-
   --gdsc-blue-1-100: #4885ed;
   --gdsc-blue-2-100: #4285f4;
   --gdsc-blue-3-100: #547dbf;
+  --gdsc-blue-4-100: #3e5c8c;
 
   --gdsc-green-1-100: #3cba54;
 
@@ -23,10 +23,14 @@
   --gdsc-yellow-1-100: #f4c20d;
 
   --gdsc-dark-1-100: #1d192b;
+  --gdsc-dark-2-100: #505050;
   --gdsc-content-1-100: #313033;
   --gdsc-grayish-1-100: #49454f;
+  --gdsc-grayish-2-100: #d7d7d7;
   --gdsc-line-1-100: #c5c5c5;
   --gdsc-bg-1-100: #dbdbdb;
+  --gdsc-bg-2-100: #e9e8e8;
+  --gdsc-bg-3-100: #ffffff;
   --gdsc-neutral-1-100: #605d62;
   --gdsc-shadow-1-100: rgb(218, 215, 215);
   --gdsc-logo-text: #666c74;
@@ -38,6 +42,11 @@
 
   --grey-text-1-100: rgba(101, 108, 115, 1);
   --grey-text-1-70: rgba(101, 108, 115, 0.7);
+  --grey-text-2-100: #8d8d8d;
+  --grey-text-3-100: #7d7d7d;
+  --grey-text-4-100: #606060;
+
+  --white-text-1-100: #dedede;
 }
 
 * {
