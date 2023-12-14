@@ -1,0 +1,180 @@
+@mixin flex-display($direction, $content) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: center;
+}
+
+.formContainer {
+  width: 32vw;
+  margin: 0 auto;
+  background: #f8f8f8;
+  border: 0.063rem solid #b8b8b8;
+  border-radius: 2rem;
+  padding: 1rem;
+
+  .formHeader {
+    @include flex-display(column, center);
+    font-family: var(--gdsc-font-4);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.02em;
+    margin: 2rem auto;
+    color: #578cf1;
+  }
+
+  .btncont {
+    display: flex;
+    justify-content: center;
+    .signupbtn {
+      padding: 0.2rem 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .SignupForm {
+    @include flex-display(column, center);
+    margin-bottom: 2rem;
+
+    label {
+      width: 74%;
+    }
+
+    .formInput {
+      width: 100%;
+      margin: 0.3rem auto;
+      padding: 2% 3%;
+      border: 0.031rem solid #b3b3b3;
+      border-radius: 0.375rem;
+      background: #f8f8f8;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        font-family: var(--gdsc-font-1);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+        /* identical to box height */
+
+        letter-spacing: 0.08em;
+
+        color: #b3b3b3;
+      }
+    }
+  }
+
+  .formBreak {
+    @include flex-display(row, space-around);
+    width: 100%;
+    margin: 2rem auto;
+
+    .formText {
+      font-family: var(--gdsc-font-1);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.313rem;
+
+      letter-spacing: 0.08em;
+
+      color: #9a9a9a;
+    }
+
+    .horizontalLine {
+      width: 20%;
+      height: 0rem;
+      border: 0.025rem solid #bfbfbf;
+      transform: rotate(-0.24deg);
+    }
+  }
+
+  .Google {
+    @include flex-display(row, center);
+    width: 20%;
+    margin: auto;
+    border: 0.031rem solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    img {
+      margin: 0.5rem auto;
+    }
+  }
+
+  .alreadyAccount {
+    @include flex-display(row, space-around);
+    width: 70%;
+    margin: 1rem auto 3rem;
+
+    p {
+      font-family: var(--gdsc-font-1);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+
+      letter-spacing: 0.08em;
+
+      color: #9a9a9a;
+    }
+
+    .loginLink {
+      font-family: var(--gdsc-font-1);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.3rem;
+
+      color: #578cf1;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .formContainer {
+    .alreadyAccount {
+      @include flex-display(column, space-around);
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .formContainer {
+    width: 40vw;
+
+    .alreadyAccount {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .formContainer {
+    width: 60vw;
+
+    .SignupForm {
+      .formInput {
+        &::placeholder {
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .alreadyAccount {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .formContainer {
+    width: 70vw;
+  }
+}

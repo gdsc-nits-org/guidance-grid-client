@@ -1,0 +1,116 @@
+@mixin flex-display($direction, $content) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: center;
+}
+
+.SignUp {
+  margin-top: 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+}
+
+.rectangle {
+  position: absolute;
+  left: 14%;
+  bottom: 30%;
+}
+
+.triangle {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+
+.Group60 {
+  position: absolute;
+  height: 15rem;
+  top: 40%
+}
+
+.Group58 {
+  position: absolute;
+  height: 10rem;
+  top: 10%
+}
+
+.Group62 {
+  position: absolute;
+  height: 5rem;
+  right: 0;
+  bottom: 0;
+}
+
+.shapes {
+  position: absolute;
+  height: 25rem;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+@media screen and (max-width: 1300px) {
+  .SignUp {
+    height: 90vh;
+  }
+  
+  .gdsc {
+    width: 50%;
+  }
+  .circle, .rectangle, .triangle, .shapes, .Group58, .Group62, .Group60 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .SignUp {
+    height: 85vh;
+  }
+
+  .gdsc {
+    width: 60%;
+  }
+  
+}
+
+
+@media screen and (max-width: 900px) {
+  .gdsc {
+    bottom: 1rem;
+    width: 60%;
+
+    .gdscLogo {
+      width: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gdsc {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gdsc {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gdsc {
+    width: 90%;
+  }
+}

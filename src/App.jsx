@@ -5,10 +5,12 @@ import {
   Error,
   Bookmark,
   ArticlePage,
+  SignIn,
+  SignUp,
   CreateArticle,
+  Landing,
   ProfilePage,
   ProfileEdit,
-  Landing,
 } from "./Pages";
 
 const App = () => {
@@ -20,10 +22,11 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/bookmarks" element={<Bookmark />} />
         <Route path="/posts" element={<ArticlePage />} />
-        <Route path="*" element={<Error error="Looks Like You Are Out Of Grids" />} />
+        <Route path="/create-article" element={<CreateArticle />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/user/profile" element={<ProfilePage user="1" />} />
         <Route path="/user/profileedit" element={<ProfileEdit />} />
-        <Route path="/create-article" element={<CreateArticle />} />
         <Route path="*" element={<Error error="Error" />} />
       </Routes>
       <Footer />

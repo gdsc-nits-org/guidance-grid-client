@@ -2,6 +2,7 @@ import React from "react";
 import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
 import style from "./Error.module.scss";
+
 import error404 from "../../error/error404.json";
 
 const Error = ({ error }) => {

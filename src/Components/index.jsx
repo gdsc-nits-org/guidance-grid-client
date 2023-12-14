@@ -19,6 +19,8 @@ import Comments from "./Comments/Comments/Comments";
 import ArticleBody from "./ArticleBody/ArticleBody";
 import ArticleSideBar from "./ArticleSideBar/ArticleSideBar";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import SignInForm from "./SignInForm/SignInForm";
+import SignUpForm from "./SignUpForm/SignUpForm";
 import ExpComp from "./ExprienceBox/Exp";
 import DeveloperCard from "./DeveloperCard/DeveloperCard";
 
@@ -44,6 +46,8 @@ export {
   ArticleBody,
   ArticleSideBar,
   ScrollToTop,
+  SignInForm,
+  SignUpForm,
   ExpComp,
   DeveloperCard,
 };
