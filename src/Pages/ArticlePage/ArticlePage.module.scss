@@ -1,7 +1,18 @@
 .page {
-  margin-top: 8rem;
-  .reactions {
-    width: 10dvw;
-    width: 10vw;
+  margin: 4rem 6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 6rem;
+  .article_body {
+    .reactions {
+      width: 10dvw;
+      width: 10vw;
+      margin: 2em 0;
+    }
+  }
+  .sidebar {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }

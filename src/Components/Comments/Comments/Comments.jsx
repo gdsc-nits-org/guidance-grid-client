@@ -6,8 +6,8 @@ const Comments = () => {
   const [postsRespState] = useFetchData("/articles/comments.json");
   return (
     <>
-      {postsRespState.response.map((item, index) => (
-        <Comment data={item} id={index} key={item?.id} />
+      {postsRespState.response.map((item) => (
+        <Comment data={item} key={item?.id} />
       ))}
     </>
   );

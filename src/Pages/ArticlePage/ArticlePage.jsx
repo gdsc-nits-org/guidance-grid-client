@@ -15,30 +15,34 @@ const ArticlePage = () => {
 
   return (
     <div className={styles.page}>
-      <ArticleSideBar />
-      {authorDataResp.response.map((d, index) => (
-        <Author
-          key={index}
-          name={d.name}
-          photo={d.photo}
-          profile={d.profile}
-          upvotes={d.upvotes}
-          views={d.views}
-          facebook={d.facebook}
-          linkedin={d.facebook}
-          twitter={d.twitter}
-        />
-      ))}
-      {articleDataResp.response.map((item) => (
-        <>
-          <ArticleBody data={item} key={item.id} />
-          <div className={styles.reactions}>
-            <Reaction data={item.metadata} key={item.title} />
-          </div>
-        </>
-      ))}
-      <CommentBox />
-      <Comments />
+      <div className={styles.article_body}>
+        {authorDataResp.response.map((d) => (
+          <Author
+            key={d.id}
+            name={d.name}
+            photo={d.photo}
+            profile={d.profile}
+            upvotes={d.upvotes}
+            views={d.views}
+            facebook={d.facebook}
+            linkedin={d.linkedin}
+            twitter={d.twitter}
+          />
+        ))}
+        {articleDataResp.response.map((item) => (
+          <>
+            <ArticleBody data={item} key={item.id} />
+            <div className={styles.reactions}>
+              <Reaction data={item.metadata} key={item.metadata.views} />
+            </div>
+          </>
+        ))}
+        <CommentBox />
+        <Comments />
+      </div>
+      <div className={styles.sidebar}>
+        <ArticleSideBar />
+      </div>
     </div>
   );
 };

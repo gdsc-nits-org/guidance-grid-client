@@ -4,7 +4,7 @@ import styles from "./Reaction.module.scss";
 
 const Reaction = ({ data }) => {
   const views = data?.views;
-  const [upvotes, setUpvotes] = useState(data.upvotes);
+  const [upvotes, setUpvotes] = useState(data?.upvotes);
   return (
     <>
       <div className={styles.info}>

@@ -1,5 +1,4 @@
-import SideBar from "../SideBar/SideBar";
-// import Suggestions from "../SuggestedPosts/Suggestions";
+import { useState } from "react";
 import Share from "../Share/Share";
 import { useFetchData } from "../../Hooks";
 import styles from "./ArticleSideBar.module.scss";
@@ -7,25 +6,23 @@ import SuggestedPosts from "../SuggestedPosts/SuggestedPosts";
 
 const ArticleSideBar = () => {
   const [postsRespState] = useFetchData("/articles/trending.json");
+  const [query, setQuery] = useState("");
   return (
-    <section>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          margin: "1rem auto",
-        }}
-      >
-        <input placeholder="Search" className={styles.search} />
+    <section className={styles.container}>
+      <div className={styles.wrapper}>
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search"
+          type="search"
+          className={styles.search}
+        />
         <Share />
         <h4 style={{ fontWeight: 600 }}>Suggested Posts</h4>
-        {postsRespState.response.map((item, index) => (
-          <SuggestedPosts data={item} id={index} key={item?.id} />
-        ))}
-        {/* <Suggestions /> */}
       </div>
-      <SideBar />
+      {postsRespState.response.map((item, index) => (
+        <SuggestedPosts data={item} id={index} key={item?.id} />
+      ))}
     </section>
   );
 };

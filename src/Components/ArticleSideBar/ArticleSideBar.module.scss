@@ -1,19 +1,18 @@
-section {
-  width: 36vw;
-  float: right;
-  margin: auto;
-  //   text-align: center;
-  .search {
-    // position: absolute;
-    border-radius: 24px;
-    width: calc(100% - 15vw);
-    padding: 0 20px;
-    // border: none;
-    // text-align: right;
-    display: flex;
-    height: 2rem;
-    margin: auto;
-    background-color: #ededed;
-    border: 1px solid rgba(95, 99, 104, 0.1);
+.container {
+  .wrapper {
+    display: grid;
+    row-gap: 3rem;
+    .search {
+      border-radius: 24px;
+      padding: 0 1.25rem;
+      display: flex;
+      height: 2rem;
+      background-color: #ededed;
+      border: 1px solid rgba(95, 99, 104, 0.1);
+    }
+    .posts {
+      display: grid;
+      row-gap: 0em;
+    }
   }
 }

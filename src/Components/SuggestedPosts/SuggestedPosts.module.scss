@@ -1,37 +1,28 @@
 .card {
-  float: right;
-  margin: 1rem 4rem;
   display: grid;
-  grid-template-columns: 0.2fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1.7fr;
-  gap: 0.5em 0.5em;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "profile details cover"
-    "title title cover";
-  height: 10%;
-  width: calc(100% - 4vw);
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
   align-items: center;
-  justify-content: center;
-  .details {
-    grid-area: details;
+  margin-bottom: 1rem;
+  .text {
+    .first {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      .profile {
+        border-radius: 50%;
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
   }
-  .title {
-    grid-area: title;
-    font-weight: bold;
-    text-align: justify;
-  }
-  .profile {
-    grid-area: profile;
-    border-radius: 50%;
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-  }
-  .cover {
-    grid-area: cover;
-    border-radius: 0.5rem;
-    width: 5rem;
-    height: 6rem;
+  .pic {
+    .cover {
+      border-radius: 8px;
+      width: 5rem;
+      height: 6rem;
+    }
   }
 }
