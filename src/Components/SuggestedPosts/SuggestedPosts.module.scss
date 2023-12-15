@@ -1,0 +1,28 @@
+.card {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  .text {
+    .first {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      .profile {
+        border-radius: 50%;
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  .pic {
+    .cover {
+      border-radius: 8px;
+      width: 5rem;
+      height: 6rem;
+    }
+  }
+}

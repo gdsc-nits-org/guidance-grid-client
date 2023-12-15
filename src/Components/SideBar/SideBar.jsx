@@ -21,7 +21,7 @@ const SideBar = () => {
       </div>
 
       <div className={styles.bookmarks}>
-        <h4>Search by tags</h4>
+        <h4>Bookmarks</h4>
         {tagsRespState.loading ||
           tagsRespState.response.bookmark.slice(0, 5).map((mark) => (
             <Link to="/" key={mark.id}>

@@ -1,31 +1,49 @@
 import { useFetchData } from "../../Hooks";
-import { Author, Footer, Navbar, Share } from "../../Components";
+import {
+  Author,
+  CommentBox,
+  Reaction,
+  Comments,
+  ArticleBody,
+  ArticleSideBar,
+} from "../../Components";
 import styles from "./ArticlePage.module.scss";
 
 const ArticlePage = () => {
   const [authorDataResp] = useFetchData("/articles/author.json");
+  const [articleDataResp] = useFetchData("/articles/article.json");
+
   return (
-    <>
-      <Navbar />
-      <div className={styles.page}>
-        {/* <SuggestedPosts /> */}
-        {authorDataResp.response.map((d, index) => (
+    <div className={styles.page}>
+      <div className={styles.article_body}>
+        {authorDataResp.response.map((d) => (
           <Author
-            key={index}
+            key={d.id}
             name={d.name}
             photo={d.photo}
             profile={d.profile}
             upvotes={d.upvotes}
             views={d.views}
             facebook={d.facebook}
-            linkedin={d.facebook}
+            linkedin={d.linkedin}
             twitter={d.twitter}
           />
         ))}
-        <Share />
+        {articleDataResp.response.map((item) => (
+          <>
+            <ArticleBody data={item} key={item.id} />
+            <div className={styles.reactions}>
+              <Reaction data={item.metadata} key={item.metadata.views} />
+            </div>
+          </>
+        ))}
+        <CommentBox />
+        <Comments />
       </div>
-      <Footer />
-    </>
+      <div className={styles.sidebar}>
+        <ArticleSideBar />
+      </div>
+    </div>
   );
 };
 

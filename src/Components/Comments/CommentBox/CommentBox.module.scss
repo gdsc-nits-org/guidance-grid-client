@@ -1,0 +1,65 @@
+*:focus {
+  outline: none;
+}
+
+.card {
+  background-color: var(--gray-background-1-100);
+  height: 40vh;
+  border: 1px solid var(--gray-border-1-40);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  .header {
+    display: flex;
+    margin: 1.5rem;
+    align-items: center;
+    .profile {
+      border-radius: 50%;
+      width: 2.5rem;
+      margin-right: 1rem;
+      display: inline-block;
+    }
+  }
+  textarea {
+    margin: 0 2rem;
+    background: inherit;
+    align-items: flex-start;
+    border: none;
+    resize: none;
+    // height: 20rem;
+    // overflow-y: hidden;
+  }
+  textarea::placeholder {
+    color: var(--grey-text-2-100);
+  }
+  textarea:invalid {
+    border: 2px dashed red;
+  }
+  .bottom {
+    display: flex;
+    margin: 0.75rem 2rem;
+    column-gap: 1rem;
+    justify-content: flex-end;
+    button {
+      cursor: pointer;
+      font-size: 0.875rem;
+      border: none;
+    }
+    .cancel {
+      background: inherit;
+      padding: 0.5rem 0.75rem;
+      border-radius: 9999px;
+      &:hover, &:active {
+        outline: 2px solid var(--gray-border-1-40);
+      }
+    }
+    .comment {
+      background-color: var(--gdsc-blue-3-100);
+      color: whitesmoke;
+      display: inline-block;
+      padding: 0.5rem 0.75rem;
+      border-radius: 9999px;
+      border: none;
+    }
+  }
+}

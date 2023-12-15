@@ -1,0 +1,18 @@
+.container {
+  .wrapper {
+    display: grid;
+    row-gap: 3rem;
+    .search {
+      border-radius: 24px;
+      padding: 0 1.25rem;
+      display: flex;
+      height: 2rem;
+      background-color: #ededed;
+      border: 1px solid rgba(95, 99, 104, 0.1);
+    }
+    .posts {
+      display: grid;
+      row-gap: 0em;
+    }
+  }
+}

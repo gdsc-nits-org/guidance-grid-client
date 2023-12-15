@@ -1,0 +1,23 @@
+{
+  "status": 200,
+  "msg": [
+    {
+      "id": 342432,
+      "title": "Why should you not use reactjs and move your project to angular as soon as possible",
+      "author": {
+        "name": "John doe",
+        "profile": "/user/1414341"
+      },
+      "domain": {
+        "name": "Web Development",
+        "url": "/domain/web"
+      },
+      "image": "https://picsum.photos/500/300",
+      "content": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. enim diam vulputate ut pharetra sit amet aliquam id. luctus venenatis lectus magna fringilla urna. eget nullam non nisi est sit. dolor magna eget est lorem ipsum. volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. quam vulputate dignissim suspendisse in est. id neque aliquam vestibulum morbi blandit. **fringilla urna porttitor rhoncus dolor purus non enim praesent elementum.**\n\n > massa eget egestas purus viverra accumsan in nisl nisi scelerisque. sodales ut etiam sit amet nisl. quis auctor elit sed vulputate. urna molestie at elementum eu facilisis sed. aenean pharetra magna ac placerat.\n adipiscing vitae proin sagittis nisl rhoncus. auctor neque vitae tempus quam pellentesque nec nam. consectetur lorem donec massa sapien faucibus et molestie ac. nibh mauris cursus mattis molestie a. neque laoreet suspendisse interdum consectetur libero id. at consectetur lorem donec massa sapien. enim praesent elementum facilisis leo vel fringilla est ullamcorper. varius duis at consectetur lorem donec massa sapien faucibus. suspendisse sed nisi lacus sed viverra tellus in hac. leo vel orci porta non pulvinar neque laoreet suspendisse interdum. pretium vulputate sapien nec sagittis.",
+      "metadata": {
+        "upvotes": 123,
+        "views": 42121
+      }
+    }
+  ]
+}
