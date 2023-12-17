@@ -5,8 +5,9 @@ import style from "./SignInForm.module.scss";
 const SignInForm = () => {
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
-    const signinWithGoogle = async () => {
+    const signInWithGoogle = async () => {
         const credential = await signInWithPopup(auth, provider);
+        console.log(await auth.currentUser.getIdToken(true));
         console.log(credential);
     }
 
@@ -14,7 +15,7 @@ const SignInForm = () => {
     <div className={style.formContainer}>
       <div className={style.formHeader}>Sign in with Google</div>
       <div className={style.btncont}>
-        <button className={style.signupbtn} onClick={signinWithGoogle}>Login</button>
+        <button className={style.signupbtn} onClick={signInWithGoogle}>Login</button>
       </div>
     </div>
   );
